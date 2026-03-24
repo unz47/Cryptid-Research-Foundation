@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "creatures": "クリーチャー",
+    "regions": "地域",
+    "about": "概要"
+  },
+  "hero": {
+    "title": "世界のクリプティッドを探索せよ",
+    "subtitle": "伝承と伝説に彩られた謎の生物たち。ツチノコからビッグフットまで——すべてのクリプティッドには物語がある。",
+    "cta": "全クリーチャーを見る"
+  },
+  "featured": {
+    "label": "FEATURED FILES",
+    "title": "注目の調査ファイル",
+    "imagePending": "[ 画像準備中 ]"
+  },
+  "zones": {
+    "label": "ANOMALOUS ZONES",
+    "title": "異常空間・特異地点",
+    "description": "クリプティッドの目撃だけでなく、空間そのものに異常が確認されている地点。CRFでは「Zファイル」として独立管理しています。"
+  },
+  "about": {
+    "missionLabel": "OUR MISSION",
+    "missionTitle": "Cryptid Research Foundation",
+    "missionP1": "Cryptid Research Foundation（CRF）は、世界各地で報告される未確認生物——いわゆるクリプティッド——の目撃情報を収集・分析し、体系的に記録することを目的とした民間研究機関です。",
+    "missionP2": "1987年の設立以来、フィールド調査員のネットワークを通じて1,200件以上の調査報告を蓄積。科学的手法に基づく分析と、各地の伝承・民俗学的知見を組み合わせた独自のアプローチで、未知の生物の実態解明に取り組んでいます。",
+    "missionP3": "本データベースは、CRFの調査記録を一般に公開し、クリプティッド研究への関心と理解を広めることを目的としています。",
+    "teamCaption": "CRF フィールド調査チーム — 2024年度遠征",
+    "classLabel": "CLASSIFICATION SYSTEM",
+    "classTitle": "CRF分類等級",
+    "classDescription": "CRFでは、各クリプティッドの危険度に基づき、独自の5段階分類を適用しています。調査員の安全確保と適切な対応プロトコルの選定に使用されます。",
+    "statusLabel": "INVESTIGATION STATUS",
+    "statusTitle": "調査ステータス",
+    "statusDescription": "各クリプティッドの調査ファイルには、以下のステータスが付与されます。",
+    "siteLabel": "ABOUT THIS SITE",
+    "siteTitle": "このサイトについて",
+    "siteP1": "このサイトは、未確認生物（UMA / Cryptid）の情報をまとめたデータベースサイトです。世界中のクリプティッドの伝承、目撃情報、科学的考察を楽しめます。",
+    "siteP2": "クリプティッドをモチーフにしたオリジナルグッズも制作しています。",
+    "shopButton": "ショップを見る →"
+  },
+  "classification": {
+    "CLASS-I": { "name": "Harmless", "description": "無害。人間に対する脅威は確認されていない。観察・記録のみで対応可能。" },
+    "CLASS-II": { "name": "Caution", "description": "注意。直接的な危害の報告は少ないが、遭遇時には警戒が必要。不用意な接近は推奨しない。" },
+    "CLASS-III": { "name": "Dangerous", "description": "危険。人間への攻撃・負傷事例が複数報告されている。調査時は必ず複数名で行動し、防護装備を携行すること。" },
+    "CLASS-IV": { "name": "High Threat", "description": "高脅威。死亡事例または重大な被害報告あり。専門訓練を受けた調査員のみ対応可。一般研究員の接近を禁止。" },
+    "CLASS-V": { "name": "Critical", "description": "最高危険度。遭遇した場合、生存率が著しく低下する。調査は遠隔手段に限定。現地入りには本部の特別許可が必要。" },
+    "CLASS-S": { "name": "Catastrophic", "description": "特級。存在そのものが広域災害に匹敵する脅威。全調査記録は最高機密扱い。対応プロトコルは本部理事会の直轄管理下に置かれ、一切の情報開示が禁止されている。" }
+  },
+  "status": {
+    "ACTIVE INVESTIGATION": "現在進行中の調査対象",
+    "PENDING REVIEW": "新規報告の審査待ち",
+    "CASE CLOSED": "調査完了・結論確定",
+    "CLASSIFIED": "機密扱い・アクセス制限"
+  },
+  "footer": {
+    "copyright": "© {year} Cryptid Research Foundation. All rights reserved."
+  }
+}

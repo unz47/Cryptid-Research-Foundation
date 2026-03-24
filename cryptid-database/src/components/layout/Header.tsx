@@ -1,18 +1,22 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/creatures", label: "Creatures" },
-  { href: "/regions", label: "Regions" },
-  { href: "/about", label: "About" },
-];
+import { useLocale, useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export function Header() {
+  const t = useTranslations("nav");
   const pathname = usePathname();
+  const locale = useLocale();
+
+  const navLinks = [
+    { href: "/", label: t("home") },
+    { href: "/creatures", label: t("creatures") },
+    { href: "/regions", label: t("regions") },
+    { href: "/about", label: t("about") },
+  ] as const;
 
   return (
     <header className="border-b border-neutral-200 bg-white">
@@ -24,7 +28,10 @@ export function Header() {
 
         <nav className="flex items-center gap-6">
           {navLinks.map((link) => {
-            const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
+            const localePath = `/${locale}${link.href === "/" ? "" : link.href}`;
+            const isActive = link.href === "/"
+              ? pathname === `/${locale}` || pathname === `/${locale}/`
+              : pathname.startsWith(localePath);
             return (
               <Link
                 key={link.href}
@@ -35,6 +42,7 @@ export function Header() {
               </Link>
             );
           })}
+          <LanguageSwitcher />
         </nav>
       </div>
     </header>

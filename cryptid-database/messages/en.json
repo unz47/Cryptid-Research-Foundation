@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "home": "Home",
+    "creatures": "Creatures",
+    "regions": "Regions",
+    "about": "About"
+  },
+  "hero": {
+    "title": "Discover the World's Cryptids",
+    "subtitle": "Explore mysterious creatures from folklore and legend. From Tsuchinoko to Bigfoot — every cryptid has a story.",
+    "cta": "Browse All Creatures"
+  },
+  "featured": {
+    "label": "FEATURED FILES",
+    "title": "Featured Cryptids",
+    "imagePending": "[ IMAGE PENDING ]"
+  },
+  "zones": {
+    "label": "ANOMALOUS ZONES",
+    "title": "Anomalous Zones",
+    "description": "Locations where spatial anomalies have been confirmed beyond cryptid sightings. CRF manages these as independent \"Z-Files\"."
+  },
+  "about": {
+    "missionLabel": "OUR MISSION",
+    "missionTitle": "Cryptid Research Foundation",
+    "missionP1": "The Cryptid Research Foundation (CRF) is a private research institution dedicated to collecting, analyzing, and systematically documenting sighting reports of unidentified creatures — commonly known as cryptids — from around the world.",
+    "missionP2": "Since its founding in 1987, CRF has accumulated over 1,200 investigation reports through a network of field researchers. Our unique approach combines scientific methodology with local folklore and ethnological knowledge to uncover the truth behind unknown creatures.",
+    "missionP3": "This database aims to make CRF's investigation records publicly available, fostering interest and understanding in cryptid research.",
+    "teamCaption": "CRF Field Research Team — Annual Expedition, 2024",
+    "classLabel": "CLASSIFICATION SYSTEM",
+    "classTitle": "CRF Classification Levels",
+    "classDescription": "CRF applies a proprietary classification system based on each cryptid's threat level. Used for ensuring investigator safety and selecting appropriate response protocols.",
+    "statusLabel": "INVESTIGATION STATUS",
+    "statusTitle": "Investigation Status",
+    "statusDescription": "Each cryptid investigation file is assigned one of the following statuses.",
+    "siteLabel": "ABOUT THIS SITE",
+    "siteTitle": "About This Site",
+    "siteP1": "This site is a database of unidentified mysterious animals (UMA / Cryptids). Explore folklore, sighting reports, and scientific analysis of cryptids from around the world.",
+    "siteP2": "We also create original merchandise featuring cryptid designs.",
+    "shopButton": "Visit Our Shop →"
+  },
+  "classification": {
+    "CLASS-I": { "name": "Harmless", "description": "No confirmed threat to humans. Observation and documentation only." },
+    "CLASS-II": { "name": "Caution", "description": "Few reports of direct harm, but caution is advised upon encounter. Unwarranted approach not recommended." },
+    "CLASS-III": { "name": "Dangerous", "description": "Multiple reports of attacks on humans. Teams of multiple investigators required with protective equipment." },
+    "CLASS-IV": { "name": "High Threat", "description": "Fatalities or major damage reported. Only specially trained investigators may respond. General researchers prohibited." },
+    "CLASS-V": { "name": "Critical", "description": "Maximum threat level. Survival rate drops significantly upon encounter. Remote investigation only. HQ special authorization required." },
+    "CLASS-S": { "name": "Catastrophic", "description": "Special class. Threat equivalent to a regional disaster. All records classified top secret. Response protocols under direct board oversight. All disclosure prohibited." }
+  },
+  "status": {
+    "ACTIVE INVESTIGATION": "Active investigation in progress",
+    "PENDING REVIEW": "Awaiting review of new reports",
+    "CASE CLOSED": "Investigation complete, conclusions finalized",
+    "CLASSIFIED": "Classified — restricted access"
+  },
+  "footer": {
+    "copyright": "© {year} Cryptid Research Foundation. All rights reserved."
+  }
+}
