@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+/* ============================================
+   カスタムテーマ（Tailwind v4）
+   @theme で定義すると bg-brand-500 等のクラスが使える
+   ============================================ */
+@theme {
+  /* Brand — 紫系（メインカラー） */
+  --color-brand-50: #f5f3ff;
+  --color-brand-100: #ede9fe;
+  --color-brand-200: #ddd6fe;
+  --color-brand-300: #c4b5fd;
+  --color-brand-400: #a78bfa;
+  --color-brand-500: #8b5cf6;
+  --color-brand-600: #7c3aed;
+  --color-brand-700: #6d28d9;
+  --color-brand-800: #5b21b6;
+  --color-brand-900: #4c1d95;
+
+  /* Accent — 赤系（CTA、ハイライト） */
+  --color-accent-50: #fef2f2;
+  --color-accent-100: #fee2e2;
+  --color-accent-200: #fecaca;
+  --color-accent-300: #fca5a5;
+  --color-accent-400: #f87171;
+  --color-accent-500: #ef4444;
+  --color-accent-600: #dc2626;
+  --color-accent-700: #b91c1c;
+  --color-accent-800: #991b1b;
+  --color-accent-900: #7f1d1d;
+
+  /* Neutral — グレー系（背景、テキスト） */
+  --color-neutral-50: #fafafa;
+  --color-neutral-100: #f5f5f5;
+  --color-neutral-200: #e5e5e5;
+  --color-neutral-300: #d4d4d4;
+  --color-neutral-400: #a3a3a3;
+  --color-neutral-500: #737373;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #262626;
+  --color-neutral-900: #171717;
+
+  /* セマンティック */
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+
+  /* フォント */
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+/* ============================================
+   ベーススタイル
+   HTML要素のデフォルトスタイルを定義
+   ============================================ */
+@layer base {
+  body {
+    @apply bg-neutral-50 text-neutral-700 font-sans;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-neutral-800;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-bold tracking-tight text-neutral-800;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl font-semibold tracking-tight text-neutral-800;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl font-semibold text-neutral-800;
+  }
+
+  p {
+    @apply text-base leading-7;
+  }
+
+  a {
+    @apply text-brand-600 hover:text-brand-700 transition-colors underline-offset-4 hover:underline;
+  }
+}

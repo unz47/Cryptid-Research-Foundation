@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="purple" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </linearGradient>
+    <linearGradient id="purpleDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6d28d9"/>
+      <stop offset="100%" stop-color="#1e1045"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Hexagon outer -->
+  <polygon points="256,52 443,160 443,352 256,460 69,352 69,160" fill="url(#purple)" stroke="none"/>
+
+  <!-- Hexagon inner (dark inset) -->
+  <polygon points="256,80 420,176 420,336 256,432 92,336 92,176" fill="url(#purpleDark)" stroke="none"/>
+
+  <!-- Eye - outer curves (left) -->
+  <path d="M130,256 Q256,120 382,256" fill="none" stroke="url(#purple)" stroke-width="8" stroke-linecap="round"/>
+  <!-- Eye - outer curves (right/bottom) -->
+  <path d="M130,256 Q256,392 382,256" fill="none" stroke="url(#purple)" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Eye - inner iris curves -->
+  <path d="M180,256 Q256,155 332,256" fill="#1e1045" stroke="none"/>
+  <path d="M180,256 Q256,357 332,256" fill="#1e1045" stroke="none"/>
+
+  <!-- Pupil slit -->
+  <path d="M256,148 Q270,256 256,364 Q242,256 256,148Z" fill="#0f0a20" stroke="none"/>
+</svg>

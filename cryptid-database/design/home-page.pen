@@ -1,0 +1,4446 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "OxXWU",
+      "x": 0,
+      "y": 0,
+      "name": "Home Page",
+      "width": 1440,
+      "fill": "$neutral-50",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "zdGtQ",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "$white",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$neutral-200"
+          },
+          "padding": [
+            0,
+            40
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "FgjJz",
+              "name": "logoArea",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "sL5oG",
+                  "name": "icon",
+                  "width": 32,
+                  "height": 32,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "polygon",
+                      "polygonCount": 6,
+                      "id": "7Y3sE",
+                      "x": 0,
+                      "y": 0,
+                      "name": "hexOuter",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 180,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#a78bfa",
+                            "position": 0
+                          },
+                          {
+                            "color": "#4c1d95",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "width": 32,
+                      "height": 32
+                    },
+                    {
+                      "type": "polygon",
+                      "polygonCount": 6,
+                      "id": "I5Gty",
+                      "x": 3,
+                      "y": 3,
+                      "name": "hexInner",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 180,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#6d28d9",
+                            "position": 0
+                          },
+                          {
+                            "color": "#1e1045",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "width": 26,
+                      "height": 26
+                    },
+                    {
+                      "type": "path",
+                      "id": "duTRo",
+                      "x": 6,
+                      "y": 10,
+                      "name": "eyeTop",
+                      "geometry": "M0 1q0.5-1 1 0",
+                      "width": 20,
+                      "height": 11,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#a78bfa"
+                      }
+                    },
+                    {
+                      "type": "path",
+                      "id": "3ZyiM",
+                      "x": 6,
+                      "y": 11,
+                      "name": "eyeBot",
+                      "geometry": "M0 0q0.5 1 1 0",
+                      "width": 20,
+                      "height": 11,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#a78bfa"
+                      }
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "UxY9C",
+                      "x": 11,
+                      "y": 11,
+                      "name": "iris",
+                      "fill": "#1e1045",
+                      "width": 10,
+                      "height": 10
+                    },
+                    {
+                      "type": "path",
+                      "id": "DXIKv",
+                      "x": 14,
+                      "y": 9,
+                      "name": "pupil",
+                      "geometry": "M0.5 0q0.2 0.5 0 1-0.2-0.5 0-1z",
+                      "fill": "#0f0a20",
+                      "width": 4,
+                      "height": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "m3MMm",
+                  "name": "logoText",
+                  "fill": "$brand-600",
+                  "content": "Cryptid Research Foundation",
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "gC5QL",
+              "name": "nav",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "M8lYh",
+                  "name": "n1",
+                  "fill": "$neutral-700",
+                  "content": "Creatures",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "3R3Sh",
+                  "name": "n2",
+                  "fill": "$neutral-700",
+                  "content": "Regions",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "eEcWR",
+                  "name": "n3",
+                  "fill": "$neutral-700",
+                  "content": "About",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "UoJ3O",
+                  "name": "shopBtn",
+                  "fill": "$brand-600",
+                  "cornerRadius": 6,
+                  "padding": [
+                    8,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "y6GSd",
+                      "name": "shopTxt",
+                      "fill": "$white",
+                      "content": "Visit Shop",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "R33c7",
+          "name": "Hero Section",
+          "width": "fill_container",
+          "fill": "$brand-900",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            80,
+            40
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "4M5re",
+              "name": "hTitle",
+              "fill": "$white",
+              "textGrowth": "fixed-width",
+              "width": 800,
+              "content": "Cryptid Research Foundation",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 56,
+              "fontWeight": "700",
+              "letterSpacing": -1
+            },
+            {
+              "type": "text",
+              "id": "coGr3",
+              "name": "hDesc",
+              "fill": "$brand-100",
+              "textGrowth": "fixed-width",
+              "width": 640,
+              "content": "Investigating mysterious creatures from folklore and legend around the globe. From Tsuchinoko to Bigfoot — every cryptid deserves a thorough investigation.",
+              "lineHeight": 1.6,
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "KofzP",
+              "name": "Search Area",
+              "width": 640,
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "gUHEi",
+                  "name": "Search Bar",
+                  "width": "fill_container",
+                  "height": 52,
+                  "fill": "$white",
+                  "cornerRadius": 8,
+                  "gap": 12,
+                  "padding": [
+                    0,
+                    0,
+                    0,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "cOfGO",
+                      "name": "searchIcon",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "search",
+                      "iconFontFamily": "lucide",
+                      "fill": "$neutral-400"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ClEYX",
+                      "name": "searchInput",
+                      "fill": "$neutral-400",
+                      "content": "Search by name, trait, or region...",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "NqbG1",
+                      "name": "searchBtn",
+                      "height": "fill_container",
+                      "fill": "$brand-500",
+                      "cornerRadius": [
+                        0,
+                        8,
+                        8,
+                        0
+                      ],
+                      "padding": [
+                        0,
+                        24
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "7ziw3",
+                          "name": "searchBtnTxt",
+                          "fill": "$white",
+                          "content": "Search",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "xdGpJ",
+                  "name": "Quick Tags",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lWH8R",
+                      "name": "tagLabel",
+                      "fill": "$brand-200",
+                      "content": "Popular Traits:",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DqTJ1",
+                      "name": "qtag1",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$brand-300"
+                      },
+                      "padding": [
+                        5,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wJuZp",
+                          "name": "qtag1t",
+                          "fill": "$brand-100",
+                          "content": "翼がある",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "0J9dk",
+                      "name": "qtag2",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$brand-300"
+                      },
+                      "padding": [
+                        5,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "PXTNw",
+                          "name": "qtag2t",
+                          "fill": "$brand-100",
+                          "content": "水棲",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "7uYxb",
+                      "name": "qtag3",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$brand-300"
+                      },
+                      "padding": [
+                        5,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "8fu8x",
+                          "name": "qtag3t",
+                          "fill": "$brand-100",
+                          "content": "夜行性",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "NztJR",
+                      "name": "qtag4",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$brand-300"
+                      },
+                      "padding": [
+                        5,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "I1rkF",
+                          "name": "qtag4t",
+                          "fill": "$brand-100",
+                          "content": "体長3m以上",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "n2LLx",
+                      "name": "qtag5",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$brand-300"
+                      },
+                      "padding": [
+                        5,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "A7R7o",
+                          "name": "qtag5t",
+                          "fill": "$brand-100",
+                          "content": "山岳",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "HcsPp",
+                      "name": "qtag6",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$brand-300"
+                      },
+                      "padding": [
+                        5,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "7WeZ2",
+                          "name": "qtag6t",
+                          "fill": "$brand-100",
+                          "content": "攻撃的",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "AFaVn",
+          "name": "Featured Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            64,
+            40
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "FZAwR",
+              "name": "fHead",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "qophl",
+                  "name": "fTitle",
+                  "fill": "$neutral-800",
+                  "content": "Featured Cryptids",
+                  "fontFamily": "Inter",
+                  "fontSize": 32,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "tjscK",
+                  "name": "fLink",
+                  "fill": "$brand-600",
+                  "content": "View all →",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "5KcL6",
+              "name": "Card Grid",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "jhc9t",
+                  "name": "Card - Tsuchinoko",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "$white",
+                  "cornerRadius": 12,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000010",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 8
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "9E79n",
+                      "name": "Card Image",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "nypl",
+                        "link": "https://unsplash.com/@nypl",
+                        "author": "The New York Public Library"
+                      },
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1758782362525-02e8a8002e9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzQzNTUyODh8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "VGDLt",
+                      "name": "c1body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "D5has",
+                          "name": "c1tags",
+                          "gap": 8,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "BLigt",
+                              "name": "t1a",
+                              "fill": "$neutral-100",
+                              "cornerRadius": 4,
+                              "padding": [
+                                4,
+                                8
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "EyvFV",
+                                  "name": "t1at",
+                                  "fill": "$neutral-500",
+                                  "content": "Reptile",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "WdX47",
+                              "name": "t1b",
+                              "fill": "$neutral-100",
+                              "cornerRadius": 4,
+                              "padding": [
+                                4,
+                                8
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "2bzhq",
+                                  "name": "t1bt",
+                                  "fill": "$neutral-500",
+                                  "content": "Japan",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "rMrQo",
+                          "name": "c1t",
+                          "fill": "$neutral-800",
+                          "content": "ツチノコ",
+                          "fontFamily": "Inter",
+                          "fontSize": 20,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "jRvRj",
+                          "name": "c1s",
+                          "fill": "$neutral-400",
+                          "content": "Tsuchinoko",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "oq9kr",
+                          "name": "c1d",
+                          "fill": "$neutral-700",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "A legendary snake-like cryptid from Japanese folklore, known for its distinctive fat body.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nhuTx",
+                  "name": "Card - Bigfoot",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "$white",
+                  "cornerRadius": 12,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000010",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 8
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "sZuxs",
+                      "name": "Card Image",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "sinjin_thomas",
+                        "link": "https://unsplash.com/@sinjin_thomas",
+                        "author": "Sinjin Thomas"
+                      },
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1629412920543-73f09b8c9fee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzQzNTUyOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "IMWWN",
+                      "name": "c1body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "YbPhL",
+                          "name": "c1tags",
+                          "gap": 8,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "LwswS",
+                              "name": "t1a",
+                              "fill": "$neutral-100",
+                              "cornerRadius": 4,
+                              "padding": [
+                                4,
+                                8
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "ZQs3E",
+                                  "name": "t1at",
+                                  "fill": "$neutral-500",
+                                  "content": "Primate",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "aquzq",
+                              "name": "t1b",
+                              "fill": "$neutral-100",
+                              "cornerRadius": 4,
+                              "padding": [
+                                4,
+                                8
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "bWHPQ",
+                                  "name": "t1bt",
+                                  "fill": "$neutral-500",
+                                  "content": "North America",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "glJc3",
+                          "name": "c1t",
+                          "fill": "$neutral-800",
+                          "content": "ビッグフット",
+                          "fontFamily": "Inter",
+                          "fontSize": 20,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "8Komg",
+                          "name": "c1s",
+                          "fill": "$neutral-400",
+                          "content": "Bigfoot",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Kwapo",
+                          "name": "c1d",
+                          "fill": "$neutral-700",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "The most famous cryptid in North America, a large ape-like creature said to inhabit forests.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ndYTa",
+                  "name": "Card - Mothman",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "$white",
+                  "cornerRadius": 12,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000010",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 8
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "MQMCy",
+                      "name": "Card Image",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "ikewinski",
+                        "link": "https://unsplash.com/@ikewinski",
+                        "author": "Mike Lewinski"
+                      },
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1774355304510.png",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "aD5AJ",
+                      "name": "c1body",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "XY6lh",
+                          "name": "c1tags",
+                          "gap": 8,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "aT8qo",
+                              "name": "t1a",
+                              "fill": "$neutral-100",
+                              "cornerRadius": 4,
+                              "padding": [
+                                4,
+                                8
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "z21M7",
+                                  "name": "t1at",
+                                  "fill": "$neutral-500",
+                                  "content": "Winged",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "hMXHS",
+                              "name": "t1b",
+                              "fill": "$neutral-100",
+                              "cornerRadius": 4,
+                              "padding": [
+                                4,
+                                8
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "e9YXq",
+                                  "name": "t1bt",
+                                  "fill": "$neutral-500",
+                                  "content": "West Virginia",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "A6wmG",
+                          "name": "c1t",
+                          "fill": "$neutral-800",
+                          "content": "モスマン",
+                          "fontFamily": "Inter",
+                          "fontSize": 20,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "mt3El",
+                          "name": "c1s",
+                          "fill": "$neutral-400",
+                          "content": "Mothman",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "SPBwR",
+                          "name": "c1d",
+                          "fill": "$neutral-700",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "A mysterious winged creature first sighted in Point Pleasant, West Virginia in 1966.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "mhWek",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "$white",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "top": 1
+            },
+            "fill": "$neutral-200"
+          },
+          "layout": "vertical",
+          "padding": [
+            32,
+            40
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "BUfpW",
+              "name": "ftxt",
+              "fill": "$neutral-500",
+              "content": "© 2026 Cryptid Research Foundation. All rights reserved.",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "xV64P",
+      "x": 1540,
+      "y": 0,
+      "name": "Creature Detail - Investigation File",
+      "width": 1440,
+      "fill": "$neutral-900",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "kQApZ",
+          "name": "newHeader",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "$white",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$neutral-200"
+          },
+          "padding": [
+            0,
+            40
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "5zP63",
+              "name": "logoArea",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "r9sDo",
+                  "name": "icon",
+                  "width": 32,
+                  "height": 32,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "polygon",
+                      "polygonCount": 6,
+                      "id": "HxdMf",
+                      "x": 0,
+                      "y": 0,
+                      "name": "hexOuter",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 180,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#a78bfa",
+                            "position": 0
+                          },
+                          {
+                            "color": "#4c1d95",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "width": 32,
+                      "height": 32
+                    },
+                    {
+                      "type": "polygon",
+                      "polygonCount": 6,
+                      "id": "o5BiC",
+                      "x": 3,
+                      "y": 3,
+                      "name": "hexInner",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 180,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#6d28d9",
+                            "position": 0
+                          },
+                          {
+                            "color": "#1e1045",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "width": 26,
+                      "height": 26
+                    },
+                    {
+                      "type": "path",
+                      "id": "JS03D",
+                      "x": 6,
+                      "y": 10,
+                      "name": "eyeTop",
+                      "geometry": "M0 1q0.5-1 1 0",
+                      "width": 20,
+                      "height": 11,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#a78bfa"
+                      }
+                    },
+                    {
+                      "type": "path",
+                      "id": "AICgD",
+                      "x": 6,
+                      "y": 11,
+                      "name": "eyeBot",
+                      "geometry": "M0 0q0.5 1 1 0",
+                      "width": 20,
+                      "height": 11,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#a78bfa"
+                      }
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "r25QN",
+                      "x": 11,
+                      "y": 11,
+                      "name": "iris",
+                      "fill": "#1e1045",
+                      "width": 10,
+                      "height": 10
+                    },
+                    {
+                      "type": "path",
+                      "id": "i4AKU",
+                      "x": 14,
+                      "y": 9,
+                      "name": "pupil",
+                      "geometry": "M0.5 0q0.2 0.5 0 1-0.2-0.5 0-1z",
+                      "fill": "#0f0a20",
+                      "width": 4,
+                      "height": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "ah44q",
+                  "name": "logoText",
+                  "fill": "$brand-600",
+                  "content": "Cryptid Research Foundation",
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "RHmBG",
+              "name": "nav",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "o9Q04",
+                  "name": "n1",
+                  "fill": "$neutral-700",
+                  "content": "Creatures",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "CXJwy",
+                  "name": "n2",
+                  "fill": "$neutral-700",
+                  "content": "Regions",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "awCVE",
+                  "name": "n3",
+                  "fill": "$neutral-700",
+                  "content": "About",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "FRkyn",
+                  "name": "shopBtn",
+                  "fill": "$brand-600",
+                  "cornerRadius": 6,
+                  "padding": [
+                    8,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "EURm8",
+                      "name": "shopTxt",
+                      "fill": "$white",
+                      "content": "Visit Shop",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Kj14m",
+          "name": "Breadcrumb",
+          "width": "fill_container",
+          "fill": "$neutral-50",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$neutral-200"
+          },
+          "gap": 8,
+          "padding": [
+            12,
+            48
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "WZAzf",
+              "name": "bc1",
+              "fill": "$brand-500",
+              "content": "Home",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "9PiNu",
+              "name": "bcSep1",
+              "fill": "$neutral-400",
+              "content": "/",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "He8FE",
+              "name": "bc2",
+              "fill": "$brand-500",
+              "content": "Creatures",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "NZ1Sa",
+              "name": "bcSep2",
+              "fill": "$neutral-400",
+              "content": "/",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "LVpFq",
+              "name": "bc3",
+              "fill": "$neutral-600",
+              "content": "CRF-0042 Tsuchinoko",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "FRHZN",
+          "name": "Meta Bar",
+          "width": "fill_container",
+          "fill": "#1a1a2e",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$brand-900"
+          },
+          "padding": [
+            16,
+            48
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ZTy0a",
+              "name": "metaLeft",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "IsTre",
+                  "name": "fileNum",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qVanp",
+                      "name": "fileNumLabel",
+                      "fill": "$neutral-500",
+                      "content": "FILE NO.",
+                      "fontFamily": "var(--font-geist-mono)",
+                      "fontSize": 10,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "gL0tw",
+                      "name": "fileNumVal",
+                      "fill": "$brand-400",
+                      "content": "CRF-0042",
+                      "fontFamily": "var(--font-geist-mono)",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "alKG6",
+                  "name": "sep1",
+                  "width": 1,
+                  "height": 16,
+                  "fill": "#333344"
+                },
+                {
+                  "type": "frame",
+                  "id": "GHR2e",
+                  "name": "statusGroup",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uWucp",
+                      "name": "statusLabel",
+                      "fill": "$neutral-500",
+                      "content": "STATUS:",
+                      "fontFamily": "var(--font-geist-mono)",
+                      "fontSize": 10,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "71r2c",
+                      "name": "statusBadge",
+                      "fill": "#1a3a1a",
+                      "cornerRadius": 2,
+                      "gap": 6,
+                      "padding": [
+                        3,
+                        10
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "U8fEy",
+                          "name": "statusDot",
+                          "fill": "#22c55e",
+                          "width": 6,
+                          "height": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "QSTdY",
+                          "name": "statusText",
+                          "fill": "#22c55e",
+                          "content": "ACTIVE INVESTIGATION",
+                          "fontFamily": "var(--font-geist-mono)",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "2WjdR",
+                  "name": "sep2",
+                  "width": 1,
+                  "height": 16,
+                  "fill": "#333344"
+                },
+                {
+                  "type": "frame",
+                  "id": "hhJMY",
+                  "name": "dateGroup",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "eHvGH",
+                      "name": "dateLabel",
+                      "fill": "$neutral-500",
+                      "content": "FILED:",
+                      "fontFamily": "var(--font-geist-mono)",
+                      "fontSize": 10,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "tw5zM",
+                      "name": "dateVal",
+                      "fill": "$neutral-300",
+                      "content": "2026-03-15",
+                      "fontFamily": "var(--font-geist-mono)",
+                      "fontSize": 12
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "6NRtf",
+                  "name": "sep3",
+                  "width": 1,
+                  "height": 16,
+                  "fill": "#333344"
+                },
+                {
+                  "type": "frame",
+                  "id": "hVrMo",
+                  "name": "classGroup",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ILKOc",
+                      "name": "classLabel",
+                      "fill": "$neutral-500",
+                      "content": "CLASSIFICATION:",
+                      "fontFamily": "var(--font-geist-mono)",
+                      "fontSize": 10,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "8HlfE",
+                      "name": "classBadge",
+                      "fill": "$accent-500",
+                      "cornerRadius": 2,
+                      "padding": [
+                        3,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "a3TjS",
+                          "name": "classText",
+                          "fill": "#ffffff",
+                          "content": "CLASS-III",
+                          "fontFamily": "var(--font-geist-mono)",
+                          "fontSize": 10,
+                          "fontWeight": "700",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "r12xv",
+          "name": "Content Area",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": 48,
+          "children": [
+            {
+              "type": "frame",
+              "id": "lN3E6",
+              "name": "Top Section",
+              "width": "fill_container",
+              "gap": 40,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "jExd7",
+                  "name": "Creature Image",
+                  "metadata": {
+                    "type": "unsplash",
+                    "username": "kenli",
+                    "link": "https://unsplash.com/@kenli",
+                    "author": "Ken Li"
+                  },
+                  "clip": true,
+                  "width": 480,
+                  "height": 360,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1575027683583-d105b2dabb8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzQzNTYzMzN8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 4,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#333344"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "peS9Z",
+                  "name": "Info Panel",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "yZHrE",
+                      "name": "titleBlock",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "DAAny",
+                          "name": "subjectLabel",
+                          "fill": "$brand-400",
+                          "content": "SUBJECT",
+                          "fontFamily": "var(--font-geist-mono)",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "z6MbU",
+                          "name": "creatureName",
+                          "fill": "#ffffff",
+                          "content": "ツチノコ",
+                          "fontFamily": "Inter",
+                          "fontSize": 42,
+                          "fontWeight": "700",
+                          "letterSpacing": -1
+                        },
+                        {
+                          "type": "text",
+                          "id": "Y3iDc",
+                          "name": "creatureNameEn",
+                          "fill": "$neutral-500",
+                          "content": "Tsuchinoko",
+                          "fontFamily": "Inter",
+                          "fontSize": 20
+                        },
+                        {
+                          "type": "frame",
+                          "id": "tsoc2",
+                          "name": "tagRow",
+                          "gap": 8,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "xqdeZ",
+                              "name": "tag1",
+                              "cornerRadius": 2,
+                              "stroke": {
+                                "thickness": 1,
+                                "fill": "$brand-700"
+                              },
+                              "padding": [
+                                4,
+                                10
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "7e8GD",
+                                  "name": "tag1Text",
+                                  "fill": "$brand-300",
+                                  "content": "REPTILIAN",
+                                  "fontFamily": "var(--font-geist-mono)",
+                                  "fontSize": 10,
+                                  "fontWeight": "600",
+                                  "letterSpacing": 1
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "wBZqY",
+                              "name": "tag2",
+                              "cornerRadius": 2,
+                              "stroke": {
+                                "thickness": 1,
+                                "fill": "$brand-700"
+                              },
+                              "padding": [
+                                4,
+                                10
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Li1G5",
+                                  "name": "tag2Text",
+                                  "fill": "$brand-300",
+                                  "content": "JAPAN",
+                                  "fontFamily": "var(--font-geist-mono)",
+                                  "fontSize": 10,
+                                  "fontWeight": "600",
+                                  "letterSpacing": 1
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "hVNxM",
+                              "name": "tag3",
+                              "cornerRadius": 2,
+                              "stroke": {
+                                "thickness": 1,
+                                "fill": "$brand-700"
+                              },
+                              "padding": [
+                                4,
+                                10
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "fJpQM",
+                                  "name": "tag3Text",
+                                  "fill": "$brand-300",
+                                  "content": "TERRESTRIAL",
+                                  "fontFamily": "var(--font-geist-mono)",
+                                  "fontSize": 10,
+                                  "fontWeight": "600",
+                                  "letterSpacing": 1
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "PFdGI",
+                      "name": "Spec Table",
+                      "clip": true,
+                      "width": "fill_container",
+                      "cornerRadius": 4,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#333344"
+                      },
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "wzkw3",
+                          "name": "specHeader",
+                          "width": "fill_container",
+                          "fill": "#1a1a2e",
+                          "padding": [
+                            10,
+                            16
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "7L1ca",
+                              "name": "specHeaderText",
+                              "fill": "$brand-400",
+                              "content": "FIELD DATA",
+                              "fontFamily": "var(--font-geist-mono)",
+                              "fontSize": 10,
+                              "fontWeight": "600",
+                              "letterSpacing": 2
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "s5qAf",
+                          "name": "row1",
+                          "width": "fill_container",
+                          "stroke": {
+                            "thickness": {
+                              "top": 1
+                            },
+                            "fill": "#222233"
+                          },
+                          "gap": 16,
+                          "padding": [
+                            10,
+                            16
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "dDSX7",
+                              "name": "row1Label",
+                              "fill": "$neutral-500",
+                              "textGrowth": "fixed-width",
+                              "width": 120,
+                              "content": "REGION",
+                              "fontFamily": "var(--font-geist-mono)",
+                              "fontSize": 10,
+                              "fontWeight": "600",
+                              "letterSpacing": 1
+                            },
+                            {
+                              "type": "text",
+                              "id": "TTLgK",
+                              "name": "row1Val",
+                              "fill": "$neutral-300",
+                              "content": "Japan — Honshu, Shikoku, Kyushu",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "2fkBl",
+                          "name": "row2",
+                          "width": "fill_container",
+                          "stroke": {
+                            "thickness": {
+                              "top": 1
+                            },
+                            "fill": "#222233"
+                          },
+                          "gap": 16,
+                          "padding": [
+                            10,
+                            16
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "FoxlS",
+                              "name": "row2Label",
+                              "fill": "$neutral-500",
+                              "textGrowth": "fixed-width",
+                              "width": 120,
+                              "content": "FIRST RECORD",
+                              "fontFamily": "var(--font-geist-mono)",
+                              "fontSize": 10,
+                              "fontWeight": "600",
+                              "letterSpacing": 1
+                            },
+                            {
+                              "type": "text",
+                              "id": "uN96O",
+                              "name": "row2Val",
+                              "fill": "$neutral-300",
+                              "content": "Circa 712 CE (Kojiki)",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "qO5BH",
+                          "name": "row3",
+                          "width": "fill_container",
+                          "stroke": {
+                            "thickness": {
+                              "top": 1
+                            },
+                            "fill": "#222233"
+                          },
+                          "gap": 16,
+                          "padding": [
+                            10,
+                            16
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "uw0Vg",
+                              "name": "row3Label",
+                              "fill": "$neutral-500",
+                              "textGrowth": "fixed-width",
+                              "width": 120,
+                              "content": "EST. SIZE",
+                              "fontFamily": "var(--font-geist-mono)",
+                              "fontSize": 10,
+                              "fontWeight": "600",
+                              "letterSpacing": 1
+                            },
+                            {
+                              "type": "text",
+                              "id": "kEm7E",
+                              "name": "row3Val",
+                              "fill": "$neutral-300",
+                              "content": "30–80 cm length, 15 cm diameter",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "3wW9b",
+                          "name": "row4",
+                          "width": "fill_container",
+                          "stroke": {
+                            "thickness": {
+                              "top": 1
+                            },
+                            "fill": "#222233"
+                          },
+                          "gap": 16,
+                          "padding": [
+                            10,
+                            16
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "LYB6m",
+                              "name": "row4Label",
+                              "fill": "$neutral-500",
+                              "textGrowth": "fixed-width",
+                              "width": 120,
+                              "content": "SIGHTINGS",
+                              "fontFamily": "var(--font-geist-mono)",
+                              "fontSize": 10,
+                              "fontWeight": "600",
+                              "letterSpacing": 1
+                            },
+                            {
+                              "type": "text",
+                              "id": "Bx1td",
+                              "name": "row4Val",
+                              "fill": "$neutral-300",
+                              "content": "200+ documented reports",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "TqLxD",
+                          "name": "row5",
+                          "width": "fill_container",
+                          "stroke": {
+                            "thickness": {
+                              "top": 1
+                            },
+                            "fill": "#222233"
+                          },
+                          "gap": 16,
+                          "padding": [
+                            10,
+                            16
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "aVcoP",
+                              "name": "row5Label",
+                              "fill": "$neutral-500",
+                              "textGrowth": "fixed-width",
+                              "width": 120,
+                              "content": "CREDIBILITY",
+                              "fontFamily": "var(--font-geist-mono)",
+                              "fontSize": 10,
+                              "fontWeight": "600",
+                              "letterSpacing": 1
+                            },
+                            {
+                              "type": "frame",
+                              "id": "9PXLD",
+                              "name": "credBar",
+                              "gap": 8,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "el0UF",
+                                  "name": "credBg",
+                                  "width": 120,
+                                  "height": 6,
+                                  "fill": "#1a1a2e",
+                                  "cornerRadius": 3,
+                                  "layout": "none",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "tvZit",
+                                      "x": 0,
+                                      "y": 0,
+                                      "name": "credFill",
+                                      "width": 84,
+                                      "height": 6,
+                                      "fill": "$brand-500",
+                                      "cornerRadius": 3
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "uvQrd",
+                                  "name": "credText",
+                                  "fill": "$brand-400",
+                                  "content": "7.2 / 10",
+                                  "fontFamily": "var(--font-geist-mono)",
+                                  "fontSize": 12,
+                                  "fontWeight": "600"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "vPKOu",
+              "name": "Detail Sections",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "k4lwN",
+                  "name": "Top Sections Row",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "tVlto",
+                      "name": "Overview",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "cornerRadius": 4,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#333344"
+                      },
+                      "layout": "vertical",
+                      "gap": 16,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "rjj7E",
+                          "name": "sec1Header",
+                          "gap": 8,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "lWuOk",
+                              "name": "sec1Icon",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "file-text",
+                              "iconFontFamily": "lucide",
+                              "fill": "$brand-400"
+                            },
+                            {
+                              "type": "text",
+                              "id": "tImmy",
+                              "name": "sec1Title",
+                              "fill": "$brand-400",
+                              "content": "OVERVIEW",
+                              "fontFamily": "var(--font-geist-mono)",
+                              "fontSize": 11,
+                              "fontWeight": "600",
+                              "letterSpacing": 2
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "N7wtA",
+                          "name": "sec1Divider",
+                          "width": "fill_container",
+                          "height": 1,
+                          "fill": "#222233"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Lnf1Z",
+                          "name": "sec1Body",
+                          "fill": "$neutral-400",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "The Tsuchinoko is a legendary snake-like cryptid reported throughout Japan. Distinguished by its unusually thick midsection and short tail, it has been described in Japanese folklore since the Kojiki (712 CE). Witnesses consistently report a creature 30-80cm in length with a body diameter significantly wider than its head.",
+                          "lineHeight": 1.7,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "WTsaS",
+                      "name": "Investigation Log",
+                      "width": "fill_container",
+                      "cornerRadius": 4,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#333344"
+                      },
+                      "layout": "vertical",
+                      "gap": 16,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "g6Ae3",
+                          "name": "sec2Header",
+                          "gap": 8,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "jH1bU",
+                              "name": "sec2Icon",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "search",
+                              "iconFontFamily": "lucide",
+                              "fill": "$brand-400"
+                            },
+                            {
+                              "type": "text",
+                              "id": "S180T",
+                              "name": "sec2Title",
+                              "fill": "$brand-400",
+                              "content": "INVESTIGATION LOG",
+                              "fontFamily": "var(--font-geist-mono)",
+                              "fontSize": 11,
+                              "fontWeight": "600",
+                              "letterSpacing": 2
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "DV2xb",
+                          "name": "sec2Divider",
+                          "width": "fill_container",
+                          "height": 1,
+                          "fill": "#222233"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "8Antr",
+                          "name": "entry1",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Wy4mb",
+                              "name": "entry1Date",
+                              "fill": "$neutral-500",
+                              "content": "2025-11-03",
+                              "fontFamily": "var(--font-geist-mono)",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "pVS2v",
+                              "name": "entry1Text",
+                              "fill": "$neutral-400",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Field team deployed to Yoshino district following multiple civilian reports. Physical evidence collected: unusual track impressions in soft soil.",
+                              "lineHeight": 1.6,
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "3q4Wv",
+                          "name": "entry2",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "LS3W2",
+                              "name": "entry2Date",
+                              "fill": "$neutral-500",
+                              "content": "2025-08-17",
+                              "fontFamily": "var(--font-geist-mono)",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "FvBn9",
+                              "name": "entry2Text",
+                              "fill": "$neutral-400",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Photographic evidence submitted by local hiker. Analysis inconclusive — forwarded to imaging department for enhancement.",
+                              "lineHeight": 1.6,
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "lZPnj",
+                  "name": "Discussion Log",
+                  "width": "fill_container",
+                  "cornerRadius": 4,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#333344"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "MYXO6",
+                      "name": "secHeader",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "T5bjm",
+                          "name": "secIcon",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "message-square",
+                          "iconFontFamily": "lucide",
+                          "fill": "$brand-400"
+                        },
+                        {
+                          "type": "text",
+                          "id": "4ttLf",
+                          "name": "secTitle",
+                          "fill": "$brand-400",
+                          "content": "DISCUSSION LOG",
+                          "fontFamily": "var(--font-geist-mono)",
+                          "fontSize": 11,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "8NQOm",
+                      "name": "secDivider",
+                      "width": "fill_container",
+                      "height": 1,
+                      "fill": "#222233"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CAWhj",
+                      "name": "Post Form",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "v7hO9",
+                          "name": "textArea",
+                          "width": "fill_container",
+                          "height": 80,
+                          "fill": "#0d0d1a",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "#333344"
+                          },
+                          "padding": [
+                            12,
+                            16
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "IF43k",
+                              "name": "placeholder",
+                              "fill": "$neutral-500",
+                              "content": "Add a research note or observation...",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "gg01x",
+                          "name": "formActions",
+                          "width": "fill_container",
+                          "gap": 12,
+                          "justifyContent": "end",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "GLZ9c",
+                              "name": "tagSelect",
+                              "cornerRadius": 4,
+                              "stroke": {
+                                "thickness": 1,
+                                "fill": "#333344"
+                              },
+                              "gap": 6,
+                              "padding": [
+                                6,
+                                12
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon_font",
+                                  "id": "Y1tmz",
+                                  "name": "tagIcon",
+                                  "width": 12,
+                                  "height": 12,
+                                  "iconFontName": "tag",
+                                  "iconFontFamily": "lucide",
+                                  "fill": "$neutral-500"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "0aSLj",
+                                  "name": "tagText",
+                                  "fill": "$neutral-400",
+                                  "content": "Analysis",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "500"
+                                },
+                                {
+                                  "type": "icon_font",
+                                  "id": "usKyb",
+                                  "name": "tagChevron",
+                                  "width": 12,
+                                  "height": 12,
+                                  "iconFontName": "chevron-down",
+                                  "iconFontFamily": "lucide",
+                                  "fill": "$neutral-500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "ic7Tt",
+                              "name": "submitBtn",
+                              "fill": "$brand-600",
+                              "cornerRadius": 4,
+                              "gap": 6,
+                              "padding": [
+                                6,
+                                16
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon_font",
+                                  "id": "6ujl0",
+                                  "name": "submitIcon",
+                                  "width": 12,
+                                  "height": 12,
+                                  "iconFontName": "send",
+                                  "iconFontFamily": "lucide",
+                                  "fill": "$white"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "jPZUl",
+                                  "name": "submitText",
+                                  "fill": "$white",
+                                  "content": "Post",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "600"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "k6jvF",
+                      "name": "Thread Area",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "2AIRL",
+                          "name": "comment1",
+                          "width": "fill_container",
+                          "stroke": {
+                            "thickness": {
+                              "bottom": 1
+                            },
+                            "fill": "#222233"
+                          },
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": [
+                            16,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "4IXjA",
+                              "name": "c1Header",
+                              "width": "fill_container",
+                              "gap": 12,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "YobpP",
+                                  "name": "c1Avatar",
+                                  "width": 28,
+                                  "height": 28,
+                                  "fill": "$brand-800",
+                                  "cornerRadius": 14,
+                                  "justifyContent": "center",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "mzuQz",
+                                      "name": "c1AvatarText",
+                                      "fill": "$brand-300",
+                                      "content": "TN",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 10,
+                                      "fontWeight": "700"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "WjqFB",
+                                  "name": "c1NameDate",
+                                  "layout": "vertical",
+                                  "gap": 2,
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "yqP0v",
+                                      "name": "c1Name",
+                                      "fill": "$neutral-200",
+                                      "content": "Dr. Tanaka Naomi",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 13,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "dZHKQ",
+                                      "name": "c1Date",
+                                      "fill": "$neutral-500",
+                                      "content": "2026-03-18 14:32 JST",
+                                      "fontFamily": "var(--font-geist-mono)",
+                                      "fontSize": 10,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "Vfr4s",
+                                  "name": "c1Tag",
+                                  "fill": "#1a2332",
+                                  "cornerRadius": 3,
+                                  "padding": [
+                                    2,
+                                    8
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "LUH2W",
+                                      "name": "c1TagText",
+                                      "fill": "#5b9bd5",
+                                      "content": "Analysis",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 10,
+                                      "fontWeight": "600"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "1xkyj",
+                              "name": "c1Body",
+                              "fill": "$neutral-400",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "The track impressions from the Yoshino survey show a distinctive lateral undulation pattern inconsistent with any known Japanese snake species. The body width-to-length ratio (~1:3) aligns with historical Tsuchinoko descriptions. Recommending DNA analysis of soil samples.",
+                              "lineHeight": 1.6,
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "WfOmq",
+                              "name": "c1Actions",
+                              "gap": 16,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "QllB4",
+                                  "name": "c1Reply",
+                                  "gap": 4,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "icon_font",
+                                      "id": "7fREh",
+                                      "name": "c1ReplyIcon",
+                                      "width": 12,
+                                      "height": 12,
+                                      "iconFontName": "reply",
+                                      "iconFontFamily": "lucide",
+                                      "fill": "$neutral-500"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "YQvXv",
+                                      "name": "c1ReplyText",
+                                      "fill": "$neutral-500",
+                                      "content": "Reply",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 11,
+                                      "fontWeight": "500"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "VDWMY",
+                                  "name": "c1Like",
+                                  "gap": 4,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "icon_font",
+                                      "id": "nxEn6",
+                                      "name": "c1LikeIcon",
+                                      "width": 12,
+                                      "height": 12,
+                                      "iconFontName": "thumbs-up",
+                                      "iconFontFamily": "lucide",
+                                      "fill": "$neutral-500"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "6OLP4",
+                                      "name": "c1LikeText",
+                                      "fill": "$neutral-500",
+                                      "content": "3",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 11,
+                                      "fontWeight": "500"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "HKqF2",
+                          "name": "reply1",
+                          "width": "fill_container",
+                          "fill": "#0f0f1e",
+                          "stroke": {
+                            "thickness": {
+                              "bottom": 1
+                            },
+                            "fill": "#222233"
+                          },
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": [
+                            12,
+                            0,
+                            12,
+                            40
+                          ],
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "QDB5y",
+                              "name": "r1Header",
+                              "gap": 12,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "xG91D",
+                                  "name": "r1Avatar",
+                                  "width": 24,
+                                  "height": 24,
+                                  "fill": "#1a2332",
+                                  "cornerRadius": 12,
+                                  "justifyContent": "center",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "v5vdj",
+                                      "name": "r1AvatarText",
+                                      "fill": "#5b9bd5",
+                                      "content": "KS",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 9,
+                                      "fontWeight": "700"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "KC1gE",
+                                  "name": "r1NameDate",
+                                  "layout": "vertical",
+                                  "gap": 2,
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "AWbBG",
+                                      "name": "r1Name",
+                                      "fill": "$neutral-200",
+                                      "content": "Prof. Kimura Sho",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 12,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "t8kqn",
+                                      "name": "r1Date",
+                                      "fill": "$neutral-500",
+                                      "content": "2026-03-19 09:15 JST",
+                                      "fontFamily": "var(--font-geist-mono)",
+                                      "fontSize": 10,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "senFa",
+                              "name": "r1Body",
+                              "fill": "$neutral-400",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Agreed. The undulation pattern is particularly interesting. I've cross-referenced with our database — only 2 other specimens in the past decade show similar characteristics. Soil samples are en route to the lab.",
+                              "lineHeight": 1.6,
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "Qrvb5",
+                              "name": "r1Actions",
+                              "gap": 16,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "QCu3x",
+                                  "name": "r1ReplyBtn",
+                                  "gap": 4,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "icon_font",
+                                      "id": "PtdXA",
+                                      "name": "r1ReplyIcon",
+                                      "width": 11,
+                                      "height": 11,
+                                      "iconFontName": "reply",
+                                      "iconFontFamily": "lucide",
+                                      "fill": "$neutral-500"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "5Swka",
+                                      "name": "r1ReplyText",
+                                      "fill": "$neutral-500",
+                                      "content": "Reply",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 10,
+                                      "fontWeight": "500"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "DslmA",
+                                  "name": "r1LikeBtn",
+                                  "gap": 4,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "icon_font",
+                                      "id": "pA2Jf",
+                                      "name": "r1LikeIcon",
+                                      "width": 11,
+                                      "height": 11,
+                                      "iconFontName": "thumbs-up",
+                                      "iconFontFamily": "lucide",
+                                      "fill": "$neutral-500"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "flYYh",
+                                      "name": "r1LikeText",
+                                      "fill": "$neutral-500",
+                                      "content": "1",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 10,
+                                      "fontWeight": "500"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "TvXw0",
+                          "name": "comment2",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": [
+                            16,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "O67te",
+                              "name": "c2Header",
+                              "width": "fill_container",
+                              "gap": 12,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "TE6J9",
+                                  "name": "c2Avatar",
+                                  "width": 28,
+                                  "height": 28,
+                                  "fill": "#1e2a1e",
+                                  "cornerRadius": 14,
+                                  "justifyContent": "center",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "15uKw",
+                                      "name": "c2AvatarText",
+                                      "fill": "#6bc46b",
+                                      "content": "YM",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 10,
+                                      "fontWeight": "700"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "Ji2xv",
+                                  "name": "c2NameDate",
+                                  "layout": "vertical",
+                                  "gap": 2,
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "fNqLL",
+                                      "name": "c2Name",
+                                      "fill": "$neutral-200",
+                                      "content": "Yamamoto Kenji (Field Agent)",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 13,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "eNOoj",
+                                      "name": "c2Date",
+                                      "fill": "$neutral-500",
+                                      "content": "2026-03-12 07:48 JST",
+                                      "fontFamily": "var(--font-geist-mono)",
+                                      "fontSize": 10,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "WQ78E",
+                                  "name": "c2Tag",
+                                  "fill": "#2a2215",
+                                  "cornerRadius": 3,
+                                  "padding": [
+                                    2,
+                                    8
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "U5AXa",
+                                      "name": "c2TagText",
+                                      "fill": "#d4a843",
+                                      "content": "Sighting Report",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 10,
+                                      "fontWeight": "600"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "tD0aa",
+                              "name": "c2Body",
+                              "fill": "$neutral-400",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Local resident in Nara prefecture reported visual contact at 05:30 near a mountain stream. Description matches Class-B encounter criteria: short, thick-bodied serpentine creature approximately 50cm, moving with a distinctive 'rolling' motion. No photographic evidence obtained.",
+                              "lineHeight": 1.6,
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "AGz2R",
+                              "name": "c2Actions",
+                              "gap": 16,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "n8379",
+                                  "name": "c2Reply",
+                                  "gap": 4,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "icon_font",
+                                      "id": "JUVFw",
+                                      "name": "c2ReplyIcon",
+                                      "width": 12,
+                                      "height": 12,
+                                      "iconFontName": "reply",
+                                      "iconFontFamily": "lucide",
+                                      "fill": "$neutral-500"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "rJ1cx",
+                                      "name": "c2ReplyText",
+                                      "fill": "$neutral-500",
+                                      "content": "Reply",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 11,
+                                      "fontWeight": "500"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "20urd",
+                                  "name": "c2Like",
+                                  "gap": 4,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "icon_font",
+                                      "id": "D9VEo",
+                                      "name": "c2LikeIcon",
+                                      "width": 12,
+                                      "height": 12,
+                                      "iconFontName": "thumbs-up",
+                                      "iconFontFamily": "lucide",
+                                      "fill": "$neutral-500"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "bjIR1",
+                                      "name": "c2LikeText",
+                                      "fill": "$neutral-500",
+                                      "content": "5",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 11,
+                                      "fontWeight": "500"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "zqOkU",
+          "name": "File Footer",
+          "width": "fill_container",
+          "fill": "#0d0d1a",
+          "stroke": {
+            "thickness": {
+              "top": 1
+            },
+            "fill": "#222233"
+          },
+          "padding": [
+            16,
+            48
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "eYixr",
+              "name": "footerLeft",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "F0ADg",
+                  "name": "footerIcon",
+                  "width": 14,
+                  "height": 14,
+                  "iconFontName": "lock",
+                  "iconFontFamily": "lucide",
+                  "fill": "$neutral-600"
+                },
+                {
+                  "type": "text",
+                  "id": "ezxOb",
+                  "name": "footerText",
+                  "fill": "$neutral-600",
+                  "content": "CONFIDENTIAL — CRF INTERNAL USE ONLY",
+                  "fontFamily": "var(--font-geist-mono)",
+                  "fontSize": 10,
+                  "fontWeight": "600",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "mKvEK",
+              "name": "footerRight",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "N9VZw",
+                  "name": "footerDate",
+                  "fill": "$neutral-600",
+                  "content": "LAST UPDATED: 2026-03-15T09:42:00Z",
+                  "fontFamily": "var(--font-geist-mono)",
+                  "fontSize": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "ZJ6mu",
+      "x": 0,
+      "y": 1221,
+      "name": "Trait Search",
+      "width": 1440,
+      "fill": "$neutral-50",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Rf3y8",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "$neutral-900",
+          "gap": 24,
+          "padding": [
+            0,
+            40
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "liIgh",
+              "name": "logo",
+              "fill": "$brand-400",
+              "content": "CRF",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "0OV5O",
+              "name": "nav1",
+              "fill": "$neutral-400",
+              "content": "Database",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "MXJvR",
+              "name": "nav2",
+              "fill": "$white",
+              "content": "Trait Search",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "Rqrg9",
+              "name": "nav3",
+              "fill": "$neutral-400",
+              "content": "Regions",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "9uv07",
+              "name": "nav4",
+              "fill": "$neutral-400",
+              "content": "About",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "KYlZh",
+          "name": "Hero Section",
+          "width": "fill_container",
+          "fill": "$neutral-900",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            48,
+            40
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "O3z92",
+              "name": "heroTitle",
+              "fill": "$white",
+              "content": "Trait Search",
+              "fontFamily": "Inter",
+              "fontSize": 36,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "2Rq56",
+              "name": "heroSub",
+              "fill": "$neutral-400",
+              "content": "Search our database by creature traits. Select characteristics below to find matching cryptids, or describe what you witnessed for reverse identification.",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "D2uSq",
+          "name": "Main Content",
+          "width": "fill_container",
+          "fill": "$neutral-50",
+          "gap": 32,
+          "padding": [
+            32,
+            40
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "f1Uif",
+              "name": "Filter Panel",
+              "width": 320,
+              "fill": "$white",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "$neutral-200"
+              },
+              "layout": "vertical",
+              "gap": 24,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "NyZeo",
+                  "name": "filterTitle",
+                  "fill": "$neutral-800",
+                  "content": "Filter by Traits",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "NlTqr",
+                  "name": "divider1",
+                  "fill": "$neutral-200",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "HQ0zs",
+                  "name": "Morphology Section",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "IqF8l",
+                      "name": "sec1Label",
+                      "fill": "$neutral-500",
+                      "content": "Morphology",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zxWG1",
+                      "name": "Morphology Tags",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "NMPuc",
+                          "name": "tag1",
+                          "fill": "$brand-500",
+                          "cornerRadius": 16,
+                          "gap": 6,
+                          "padding": [
+                            6,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "LjR3R",
+                              "name": "tag1Text",
+                              "fill": "$white",
+                              "content": "翼がある",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "EAuFS",
+                          "name": "tag2",
+                          "cornerRadius": 16,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$neutral-300"
+                          },
+                          "gap": 6,
+                          "padding": [
+                            6,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Sz7Zp",
+                              "name": "tag2Text",
+                              "fill": "$neutral-700",
+                              "content": "角がある",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "sTauQ",
+                          "name": "tag3",
+                          "cornerRadius": 16,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$neutral-300"
+                          },
+                          "gap": 6,
+                          "padding": [
+                            6,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Pwv8q",
+                              "name": "tag3Text",
+                              "fill": "$neutral-700",
+                              "content": "多足",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Y5RwZ",
+                      "name": "Morphology Tags Row 2",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "dU8Bx",
+                          "name": "mtag4",
+                          "cornerRadius": 16,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$neutral-300"
+                          },
+                          "gap": 6,
+                          "padding": [
+                            6,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "jR10I",
+                              "name": "mtag4t",
+                              "fill": "$neutral-700",
+                              "content": "鱗がある",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "xn2gy",
+                          "name": "mtag5",
+                          "cornerRadius": 16,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$neutral-300"
+                          },
+                          "gap": 6,
+                          "padding": [
+                            6,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "F3YPQ",
+                              "name": "mtag5t",
+                              "fill": "$neutral-700",
+                              "content": "発光",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "4azkw",
+                  "name": "Habitat Section",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "UoL83",
+                      "name": "sec2Label",
+                      "fill": "$neutral-500",
+                      "content": "Habitat",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "frame",
+                      "id": "NLKur",
+                      "name": "Habitat Tags",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "OCOfp",
+                          "name": "htag1",
+                          "fill": "$brand-500",
+                          "cornerRadius": 16,
+                          "gap": 6,
+                          "padding": [
+                            6,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "HUCsM",
+                              "name": "htag1t",
+                              "fill": "$white",
+                              "content": "水棲",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "kH0Kh",
+                          "name": "htag2",
+                          "cornerRadius": 16,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$neutral-300"
+                          },
+                          "gap": 6,
+                          "padding": [
+                            6,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "psILJ",
+                              "name": "htag2t",
+                              "fill": "$neutral-700",
+                              "content": "山岳",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "55KuU",
+                          "name": "htag3",
+                          "cornerRadius": 16,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$neutral-300"
+                          },
+                          "gap": 6,
+                          "padding": [
+                            6,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "GEhsc",
+                              "name": "htag3t",
+                              "fill": "$neutral-700",
+                              "content": "森林",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "2LV04",
+                          "name": "htag4",
+                          "cornerRadius": 16,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$neutral-300"
+                          },
+                          "gap": 6,
+                          "padding": [
+                            6,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "YepNy",
+                              "name": "htag4t",
+                              "fill": "$neutral-700",
+                              "content": "都市",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "N0a6F",
+                  "name": "Behavior Section",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "sOxZJ",
+                      "name": "sec3Label",
+                      "fill": "$neutral-500",
+                      "content": "Behavior",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZLBhT",
+                      "name": "Behavior Tags",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "oigzG",
+                          "name": "btag1",
+                          "cornerRadius": 16,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$neutral-300"
+                          },
+                          "gap": 6,
+                          "padding": [
+                            6,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "zEF57",
+                              "name": "btag1t",
+                              "fill": "$neutral-700",
+                              "content": "夜行性",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "DagPj",
+                          "name": "btag2",
+                          "cornerRadius": 16,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$neutral-300"
+                          },
+                          "gap": 6,
+                          "padding": [
+                            6,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "tl5Kl",
+                              "name": "btag2t",
+                              "fill": "$neutral-700",
+                              "content": "攻撃的",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "GwsXm",
+                          "name": "btag3",
+                          "cornerRadius": 16,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$neutral-300"
+                          },
+                          "gap": 6,
+                          "padding": [
+                            6,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "xSZcd",
+                              "name": "btag3t",
+                              "fill": "$neutral-700",
+                              "content": "飛行",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "x9JuD",
+                  "name": "Size Section",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "AfaLc",
+                      "name": "sec4Label",
+                      "fill": "$neutral-500",
+                      "content": "Size",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "frame",
+                      "id": "odWJT",
+                      "name": "Size Tags",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "E0NjA",
+                          "name": "stag1",
+                          "cornerRadius": 16,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$neutral-300"
+                          },
+                          "gap": 6,
+                          "padding": [
+                            6,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "c95DE",
+                              "name": "stag1t",
+                              "fill": "$neutral-700",
+                              "content": "体長3m以上",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "5Bfbr",
+                          "name": "stag2",
+                          "cornerRadius": 16,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$neutral-300"
+                          },
+                          "gap": 6,
+                          "padding": [
+                            6,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "wGfPX",
+                              "name": "stag2t",
+                              "fill": "$neutral-700",
+                              "content": "1-3m",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "MAxr5",
+                          "name": "stag3",
+                          "cornerRadius": 16,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$neutral-300"
+                          },
+                          "gap": 6,
+                          "padding": [
+                            6,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "a0oea",
+                              "name": "stag3t",
+                              "fill": "$neutral-700",
+                              "content": "1m未満",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "pSlub",
+                  "name": "divider2",
+                  "fill": "$neutral-200",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "m5MTM",
+                  "name": "Reverse Search",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "J4Szx",
+                      "name": "reverseLabel",
+                      "fill": "$neutral-500",
+                      "content": "Reverse Identification",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "5pv1r",
+                      "name": "reverseDesc",
+                      "fill": "$neutral-400",
+                      "content": "Describe what you saw",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "G5E5u",
+                      "name": "Text Input",
+                      "width": "fill_container",
+                      "height": 80,
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$neutral-300"
+                      },
+                      "layout": "vertical",
+                      "padding": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "eD23V",
+                          "name": "placeholder",
+                          "fill": "$neutral-400",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "例: 夜、湖の近くで光る目を持つ大きな生物を見た...",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "HujP6",
+                  "name": "Search Button",
+                  "width": "fill_container",
+                  "height": 44,
+                  "fill": "$brand-500",
+                  "cornerRadius": 8,
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "xmWeY",
+                      "name": "searchBtnIcon",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "search",
+                      "iconFontFamily": "lucide",
+                      "fill": "$white"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Fuzq2",
+                      "name": "searchBtnText",
+                      "fill": "$white",
+                      "content": "Search Database",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "y90D4",
+              "name": "Results Area",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "QVTb1",
+                  "name": "Results Header",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "JE7v0",
+                      "name": "resultsTitle",
+                      "fill": "$neutral-800",
+                      "content": "3 Results Found",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "TtgHZ",
+                      "name": "sortFrame",
+                      "cornerRadius": 6,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$neutral-300"
+                      },
+                      "gap": 8,
+                      "padding": [
+                        6,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "vgh5P",
+                          "name": "sortIcon",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "arrow-up-down",
+                          "iconFontFamily": "lucide",
+                          "fill": "$neutral-500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "5M1Ka",
+                          "name": "sortText",
+                          "fill": "$neutral-600",
+                          "content": "Relevance",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "EzyEz",
+                  "name": "Results Grid",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Ocdl4",
+                      "name": "Result Card 1",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "$white",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$neutral-200"
+                      },
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "IDt1K",
+                          "name": "Thumbnail",
+                          "width": 180,
+                          "height": 160,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./images/generated-1774356912695.png",
+                            "mode": "fill"
+                          }
+                        },
+                        {
+                          "type": "frame",
+                          "id": "2p6J5",
+                          "name": "Info",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": [
+                            16,
+                            20
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "rO3nI",
+                              "name": "card1File",
+                              "fill": "$brand-500",
+                              "content": "CRF-0012",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "600",
+                              "letterSpacing": 1
+                            },
+                            {
+                              "type": "text",
+                              "id": "itnSN",
+                              "name": "card1Name",
+                              "fill": "$neutral-800",
+                              "content": "ネッシー / Loch Ness Monster",
+                              "fontFamily": "Inter",
+                              "fontSize": 18,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "rkGRW",
+                              "name": "card1Desc",
+                              "fill": "$neutral-500",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "スコットランド・ネス湖に生息するとされる大型水棲生物。首長竜の生き残りとする説が有力。",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "Toore",
+                              "name": "Card Tags",
+                              "width": "fill_container",
+                              "gap": 6,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "BJRIN",
+                                  "name": "ct1",
+                                  "fill": "$brand-50",
+                                  "cornerRadius": 10,
+                                  "padding": [
+                                    3,
+                                    8
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "VPYZN",
+                                      "name": "ct1t",
+                                      "fill": "$brand-500",
+                                      "content": "水棲",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 11,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "SKzhb",
+                                  "name": "ct2",
+                                  "fill": "$brand-50",
+                                  "cornerRadius": 10,
+                                  "padding": [
+                                    3,
+                                    8
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "yrQMg",
+                                      "name": "ct2t",
+                                      "fill": "$brand-500",
+                                      "content": "体長3m以上",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 11,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "mIzgQ",
+                                  "name": "ct3",
+                                  "fill": "$neutral-100",
+                                  "cornerRadius": 10,
+                                  "padding": [
+                                    3,
+                                    8
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "3RKHo",
+                                      "name": "ct3t",
+                                      "fill": "$neutral-600",
+                                      "content": "Class-III",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 11,
+                                      "fontWeight": "600"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "D5wby",
+                      "name": "Result Card 2",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "$white",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$neutral-200"
+                      },
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "CQwpE",
+                          "name": "Thumbnail",
+                          "width": 180,
+                          "height": 160,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./images/generated-1774356939632.png",
+                            "mode": "fill"
+                          }
+                        },
+                        {
+                          "type": "frame",
+                          "id": "F8Lsg",
+                          "name": "Info",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": [
+                            16,
+                            20
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "QEarG",
+                              "name": "c2File",
+                              "fill": "$brand-500",
+                              "content": "CRF-0027",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "600",
+                              "letterSpacing": 1
+                            },
+                            {
+                              "type": "text",
+                              "id": "MbZ2B",
+                              "name": "c2Name",
+                              "fill": "$neutral-800",
+                              "content": "河童 / Kappa",
+                              "fontFamily": "Inter",
+                              "fontSize": 18,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "omTzV",
+                              "name": "c2Desc",
+                              "fill": "$neutral-500",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "日本各地の河川に生息するとされる水棲の未確認生物。頭頂部の皿と甲羅が特徴的。",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "akHh2",
+                              "name": "Card Tags",
+                              "width": "fill_container",
+                              "gap": 6,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "LLPLQ",
+                                  "name": "c2t1",
+                                  "fill": "$brand-50",
+                                  "cornerRadius": 10,
+                                  "padding": [
+                                    3,
+                                    8
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "yaGVC",
+                                      "name": "c2t1t",
+                                      "fill": "$brand-500",
+                                      "content": "水棲",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 11,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "InRio",
+                                  "name": "c2t2",
+                                  "fill": "$brand-50",
+                                  "cornerRadius": 10,
+                                  "padding": [
+                                    3,
+                                    8
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "I0lkU",
+                                      "name": "c2t2t",
+                                      "fill": "$brand-500",
+                                      "content": "1m未満",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 11,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "UHP5M",
+                                  "name": "c2t3",
+                                  "fill": "$neutral-100",
+                                  "cornerRadius": 10,
+                                  "padding": [
+                                    3,
+                                    8
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "BPq42",
+                                      "name": "c2t3t",
+                                      "fill": "$neutral-600",
+                                      "content": "Class-II",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 11,
+                                      "fontWeight": "600"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "5cFIX",
+                      "name": "Result Card 3",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "$white",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$neutral-200"
+                      },
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "iIVmC",
+                          "name": "Thumbnail",
+                          "width": 180,
+                          "height": 160,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./images/generated-1774356962927.png",
+                            "mode": "fill"
+                          }
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ZigRu",
+                          "name": "Info",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": [
+                            16,
+                            20
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "vJ7hR",
+                              "name": "c3File",
+                              "fill": "$brand-500",
+                              "content": "CRF-0042",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "600",
+                              "letterSpacing": 1
+                            },
+                            {
+                              "type": "text",
+                              "id": "8xFcF",
+                              "name": "c3Name",
+                              "fill": "$neutral-800",
+                              "content": "モスマン / Mothman",
+                              "fontFamily": "Inter",
+                              "fontSize": 18,
+                              "fontWeight": "bold"
+                            },
+                            {
+                              "type": "text",
+                              "id": "R2Bw7",
+                              "name": "c3Desc",
+                              "fill": "$neutral-500",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "米国ウェストバージニア州で目撃された翼を持つ人型の未確認生物。赤く光る目が特徴。",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "rg3n5",
+                              "name": "Card Tags",
+                              "width": "fill_container",
+                              "gap": 6,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "uhyxA",
+                                  "name": "c3t1",
+                                  "fill": "$brand-50",
+                                  "cornerRadius": 10,
+                                  "padding": [
+                                    3,
+                                    8
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "Ir9Nj",
+                                      "name": "c3t1t",
+                                      "fill": "$brand-500",
+                                      "content": "翼がある",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 11,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "j3pSI",
+                                  "name": "c3t2",
+                                  "fill": "$brand-50",
+                                  "cornerRadius": 10,
+                                  "padding": [
+                                    3,
+                                    8
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "zw3N1",
+                                      "name": "c3t2t",
+                                      "fill": "$brand-500",
+                                      "content": "夜行性",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 11,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "bMsKd",
+                                  "name": "c3t3",
+                                  "fill": "$neutral-100",
+                                  "cornerRadius": 10,
+                                  "padding": [
+                                    3,
+                                    8
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "bP4q9",
+                                      "name": "c3t3t",
+                                      "fill": "$neutral-600",
+                                      "content": "Class-IV",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 11,
+                                      "fontWeight": "600"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "accent-500": {
+      "type": "color",
+      "value": "#ef4444"
+    },
+    "accent-600": {
+      "type": "color",
+      "value": "#dc2626"
+    },
+    "brand-100": {
+      "type": "color",
+      "value": "#ede9fe"
+    },
+    "brand-50": {
+      "type": "color",
+      "value": "#f5f3ff"
+    },
+    "brand-500": {
+      "type": "color",
+      "value": "#8b5cf6"
+    },
+    "brand-600": {
+      "type": "color",
+      "value": "#7c3aed"
+    },
+    "brand-900": {
+      "type": "color",
+      "value": "#4c1d95"
+    },
+    "neutral-100": {
+      "type": "color",
+      "value": "#f5f5f5"
+    },
+    "neutral-200": {
+      "type": "color",
+      "value": "#e5e5e5"
+    },
+    "neutral-400": {
+      "type": "color",
+      "value": "#a3a3a3"
+    },
+    "neutral-50": {
+      "type": "color",
+      "value": "#fafafa"
+    },
+    "neutral-500": {
+      "type": "color",
+      "value": "#737373"
+    },
+    "neutral-700": {
+      "type": "color",
+      "value": "#404040"
+    },
+    "neutral-800": {
+      "type": "color",
+      "value": "#262626"
+    },
+    "white": {
+      "type": "color",
+      "value": "#ffffff"
+    },
+    "brand-200": {
+      "type": "color",
+      "value": "#ddd6fe"
+    },
+    "brand-300": {
+      "type": "color",
+      "value": "#c4b5fd"
+    },
+    "brand-400": {
+      "type": "color",
+      "value": "#a78bfa"
+    },
+    "brand-700": {
+      "type": "color",
+      "value": "#6d28d9"
+    },
+    "brand-800": {
+      "type": "color",
+      "value": "#5b21b6"
+    },
+    "neutral-300": {
+      "type": "color",
+      "value": "#d4d4d4"
+    },
+    "neutral-600": {
+      "type": "color",
+      "value": "#525252"
+    },
+    "neutral-900": {
+      "type": "color",
+      "value": "#171717"
+    }
+  }
+}
