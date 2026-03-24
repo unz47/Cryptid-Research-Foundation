@@ -48,8 +48,8 @@
   --color-info: #3b82f6;
 
   /* フォント */
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-space-mono), ui-monospace, monospace;
 }
 
 /* ============================================
@@ -59,6 +59,12 @@
 @layer base {
   body {
     @apply bg-neutral-50 text-neutral-700 font-sans;
+    background-image:
+      linear-gradient(#d4d4d4 1px, transparent 1px),
+      linear-gradient(90deg, #d4d4d4 1px, transparent 1px),
+      linear-gradient(#e5e5e5 0.5px, transparent 0.5px),
+      linear-gradient(90deg, #e5e5e5 0.5px, transparent 0.5px);
+    background-size: 120px 120px, 120px 120px, 24px 24px, 24px 24px;
   }
 
   h1 {
@@ -83,5 +89,30 @@
 
   a {
     @apply text-brand-600 hover:text-brand-700 transition-colors underline-offset-4 hover:underline;
+  }
+}
+
+/* ============================================
+   ナビゲーションリンク — ホバーアニメーション
+   ============================================ */
+@layer components {
+  .nav-link {
+    @apply relative text-sm font-medium text-neutral-600 transition-colors duration-200;
+  }
+  .nav-link::after {
+    content: '';
+    @apply absolute -bottom-1 left-0 h-0.5 w-0 bg-brand-600 transition-all duration-200;
+  }
+  .nav-link:hover {
+    @apply text-brand-600;
+  }
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+  .nav-link.active {
+    @apply text-brand-600 font-semibold;
+  }
+  .nav-link.active::after {
+    @apply w-full;
   }
 }

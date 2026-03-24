@@ -1,5 +1,5 @@
 {
-  "version": "2.8",
+  "version": "2.9",
   "children": [
     {
       "type": "frame",
@@ -1492,7 +1492,8 @@
                       "fill": "$neutral-300",
                       "content": "2026-03-15",
                       "fontFamily": "var(--font-geist-mono)",
-                      "fontSize": 12
+                      "fontSize": 12,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -1638,7 +1639,8 @@
                           "fill": "$neutral-500",
                           "content": "Tsuchinoko",
                           "fontFamily": "Inter",
-                          "fontSize": 20
+                          "fontSize": 20,
+                          "fontWeight": "normal"
                         },
                         {
                           "type": "frame",
@@ -3012,7 +3014,8 @@
                   "fill": "$neutral-600",
                   "content": "LAST UPDATED: 2026-03-15T09:42:00Z",
                   "fontFamily": "var(--font-geist-mono)",
-                  "fontSize": 10
+                  "fontSize": 10,
+                  "fontWeight": "normal"
                 }
               ]
             }
