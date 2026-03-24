@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 const anomalousZones = [
   { id: "bermuda-triangle", name: "バミューダトライアングル", nameEn: "Bermuda Triangle", fileNo: "CRF-Z001", classification: "CLASS-V", classColor: "bg-red-800", region: "Atlantic Ocean", description: "大西洋上の三角海域。航空機・船舶の原因不明の消失が多数報告されている。" },
@@ -29,7 +30,11 @@ export default function AnomalousZones() {
         <p className="text-neutral-400 mb-8 max-w-2xl">{t("description")}</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {anomalousZones.map((zone) => (
-            <div key={zone.id} className="bg-neutral-800 border border-neutral-700 rounded-lg p-5 transition-all duration-300 hover:border-brand-500 hover:-translate-y-0.5">
+            <Link
+              key={zone.id}
+              href={`/zones/${zone.id}`}
+              className="block bg-neutral-800 border border-neutral-700 rounded-lg p-5 no-underline transition-all duration-300 hover:border-brand-500 hover:-translate-y-0.5"
+            >
               <div className="flex items-center gap-2 mb-3">
                 <span className="text-xs font-mono text-neutral-500">{zone.fileNo}</span>
                 <span className={`${zone.classColor} text-white text-[10px] font-mono font-bold px-2 py-0.5 rounded`}>{zone.classification}</span>
@@ -37,7 +42,7 @@ export default function AnomalousZones() {
               <h3 className="text-lg font-bold text-white mb-1">{zone.name}</h3>
               <p className="text-sm text-neutral-400 mb-3">{zone.nameEn} — {zone.region}</p>
               <p className="text-sm text-neutral-300 leading-relaxed">{zone.description}</p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

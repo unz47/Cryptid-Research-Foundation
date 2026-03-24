@@ -11,14 +11,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return { title: `${entry.fileNo} ${entry.nameEn}` };
 }
 
-export default async function CreatureDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function ZoneDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const entry = getFileEntry(slug);
-  if (!entry) notFound();
+  if (!entry || entry.type !== "zone") notFound();
 
   return (
     <>
-      <Breadcrumb fileNo={entry.fileNo} nameEn={entry.nameEn} />
+      <Breadcrumb fileNo={entry.fileNo} nameEn={entry.nameEn} type="zone" />
       <FileDetail entry={entry} />
     </>
   );
