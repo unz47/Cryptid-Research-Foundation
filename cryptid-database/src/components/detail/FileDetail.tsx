@@ -1,5 +1,6 @@
 import { getImages } from "@/lib/defaultImage";
 import Image from "next/image";
+import ImageSlider from "./ImageSlider";
 
 const lightGrid = {
   backgroundImage: `
@@ -28,7 +29,11 @@ function n(entry: any) {
     classification: entry.classification, classColor: entry.classColor || entry.class_color, status: entry.status, statusColor: entry.statusColor || entry.status_color,
     filedDate: entry.filedDate || entry.filed_date, lastUpdated: entry.lastUpdated || entry.last_updated, region: entry.region,
     firstRecord: entry.firstRecord || entry.first_record, estSize: entry.estSize || entry.est_size, sightings: entry.sightings,
-    credibility: entry.credibility, tags: entry.tags, image: entry.image, overview: entry.overview, logs: entry.logs,
+    credibility: entry.credibility, tags: entry.tags,
+    image: typeof entry.image === "string" && entry.image.includes(",") ? entry.image.split(",") : entry.image,
+    overview: entry.overview,
+    logs: typeof entry.logs === "string" ? JSON.parse(entry.logs) : entry.logs,
+    shopUrl: entry.shopUrl || entry.shop_url || "",
   };
 }
 
@@ -61,6 +66,11 @@ export default function FileDetail({ entry: raw }: { entry: any }) {
           <span className={`${entry.classColor} text-white font-bold px-2 py-0.5 rounded text-[10px]`}>
             {entry.classification}
           </span>
+          {entry.shopUrl && (
+            <a href={entry.shopUrl} target="_blank" rel="noopener noreferrer" className="ml-auto flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white text-sm font-bold px-5 py-1.5 rounded-full no-underline transition-all duration-200 border border-white/20 hover:border-white/40 backdrop-blur-sm">
+              SHOP <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
+          )}
         </div>
       </div>
 
@@ -69,12 +79,8 @@ export default function FileDetail({ entry: raw }: { entry: any }) {
         {/* Top: Image + Info */}
         <div className="flex gap-10 items-stretch">
           {/* Image placeholder */}
-          <div className={`w-[480px] shrink-0 rounded border ${sectionBorder} ${sectionShadow} ${sectionBg} overflow-hidden flex flex-col gap-2`}>
-            {images.map((src, i) => (
-              <div key={i} className="relative aspect-[4/3]">
-                <Image src={src} alt={`${entry.nameEn} ${i + 1}`} fill className="object-cover" sizes="480px" />
-              </div>
-            ))}
+          <div className="w-[480px] shrink-0 overflow-hidden">
+            <ImageSlider images={images} alt={entry.nameEn} />
           </div>
 
           {/* Info Panel */}

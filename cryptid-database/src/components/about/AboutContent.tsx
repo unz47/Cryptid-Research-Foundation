@@ -91,7 +91,7 @@ export default function AboutContent() {
           <p>{t("siteP2")}</p>
         </div>
         <div className="mt-6">
-          <a href="https://www.etsy.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-brand-600 text-white text-sm font-medium px-5 py-2.5 rounded-md no-underline hover:bg-brand-700 transition-all duration-200 hover:scale-[1.02] hover:shadow-md active:scale-[0.98]">
+          <a href="https://www.etsy.com/shop/InkDropStudioStore" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-brand-600 text-white text-sm font-medium px-5 py-2.5 rounded-md no-underline hover:bg-brand-700 transition-all duration-200 hover:scale-[1.02] hover:shadow-md active:scale-[0.98]">
             {t("shopButton")}
           </a>
         </div>

@@ -20,6 +20,7 @@ export interface FileEntry {
   logs: { date: string; content: string }[];
   type: "creature" | "zone";
   searchAliases: string[];
+  shopUrl?: string;
 }
 
 export const fileEntries: Record<string, FileEntry> = {
@@ -125,6 +126,7 @@ export const fileEntries: Record<string, FileEntry> = {
     ],
     type: "creature",
     searchAliases: ["ねっしー", "nessie", "loch ness monster", "ロッホネスモンスター", "ネス湖の怪獣"],
+    shopUrl: "https://www.etsy.com/jp/listing/4477542096/cute-loch-ness-monster-sticker-kawaii",
   },
   "bermuda-triangle": {
     slug: "bermuda-triangle",
