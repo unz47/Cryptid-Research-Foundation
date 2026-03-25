@@ -27,6 +27,21 @@
     "imagePending": "[ 画像準備中 ]",
     "viewAll": "すべて見る"
   },
+  "detail": {
+    "filed": "登録日",
+    "shop": "ショップ",
+    "subject": "対象",
+    "fieldData": "フィールドデータ",
+    "region": "地域",
+    "firstRecord": "最初の記録",
+    "estSize": "推定サイズ",
+    "sightings": "目撃件数",
+    "credibility": "信憑性",
+    "overview": "概要",
+    "investigationLog": "調査ログ",
+    "confidential": "機密 — CRF内部使用限定",
+    "lastUpdated": "最終更新"
+  },
   "search": {
     "label": "SEARCH DATABASE",
     "title": "検索結果",
@@ -43,7 +58,8 @@
     "sizeMedium": "1〜3m",
     "sizeLarge": "3m以上",
     "clear": "フィルター解除",
-    "noResults": "該当するファイルが見つかりません。"
+    "noResults": "該当するファイルが見つかりません。",
+    "filterByTag": "タグで絞り込み"
   },
   "creatureList": {
     "label": "CREATURE DATABASE",
@@ -90,6 +106,8 @@
     "label": "INVESTIGATION REQUEST",
     "title": "目撃報告を提出する",
     "description": "未確認生物または異常現象を目撃しましたか？CRFに報告を提出し、調査を依頼してください。",
+    "newReport": "新規報告",
+    "pendingSubmission": "提出待ち",
     "reporterName": "報告者名",
     "optional": "任意",
     "sightingDate": "目撃日",

@@ -156,7 +156,7 @@ export default function SearchResults({ results, query, activeTags, allTags, all
 
         {/* Tag chips */}
         <div className="mb-8">
-          <p className="text-[10px] font-mono font-bold tracking-widest text-neutral-500 mb-3">FILTER BY TAG</p>
+          <p className="text-[10px] font-mono font-bold tracking-widest text-neutral-500 mb-3">{t("filterByTag")}</p>
           <div className="flex flex-wrap gap-2">
             {allTags.map((tag) => (
               <Link

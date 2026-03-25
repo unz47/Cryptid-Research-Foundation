@@ -1,6 +1,9 @@
+"use client";
+
 import { getImages } from "@/lib/defaultImage";
 import Image from "next/image";
 import ImageSlider from "./ImageSlider";
+import { useTranslations } from "next-intl";
 
 const lightGrid = {
   backgroundImage: `
@@ -40,6 +43,7 @@ function n(entry: any) {
 export default function FileDetail({ entry: raw }: { entry: any }) {
   const entry = n(raw);
   const images = getImages(entry.image, entry.slug);
+  const t = useTranslations("detail");
   const isDark = entry.type === "zone";
   const bg = isDark ? "text-white" : "text-neutral-800";
   const gridStyle = isDark ? darkGrid : lightGrid;
@@ -61,14 +65,14 @@ export default function FileDetail({ entry: raw }: { entry: any }) {
             <span className="text-neutral-300">{entry.status}</span>
           </span>
           <span className="w-px h-4 bg-[#333344]" />
-          <span className="text-neutral-400">Filed: {entry.filedDate}</span>
+          <span className="text-neutral-400">{t("filed")}: {entry.filedDate}</span>
           <span className="w-px h-4 bg-[#333344]" />
           <span className={`${entry.classColor} text-white font-bold px-2 py-0.5 rounded text-[10px]`}>
             {entry.classification}
           </span>
           {entry.shopUrl && (
             <a href={entry.shopUrl} target="_blank" rel="noopener noreferrer" className="ml-auto flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white text-sm font-bold px-5 py-1.5 rounded-full no-underline transition-all duration-200 border border-white/20 hover:border-white/40 backdrop-blur-sm">
-              SHOP <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              {t("shop")} <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
             </a>
           )}
         </div>
@@ -86,7 +90,7 @@ export default function FileDetail({ entry: raw }: { entry: any }) {
           {/* Info Panel */}
           <div className="flex-1 space-y-6">
             <div>
-              <p className={`text-xs font-mono tracking-widest ${isDark ? "text-brand-400" : "text-brand-600"} mb-1`}>SUBJECT</p>
+              <p className={`text-xs font-mono tracking-widest ${isDark ? "text-brand-400" : "text-brand-600"} mb-1`}>{t("subject")}</p>
               <h1 className="text-4xl font-bold mb-1">{entry.name}</h1>
               <p className={`text-lg ${labelText}`}>{entry.nameEn}</p>
             </div>
@@ -103,14 +107,14 @@ export default function FileDetail({ entry: raw }: { entry: any }) {
             {/* Spec Table */}
             <div className={`border ${sectionBorder} ${sectionShadow} ${sectionBg} rounded`}>
               <div className={`px-4 py-2 border-b ${sectionBorder}`}>
-                <span className={`text-xs font-mono font-bold tracking-widest ${isDark ? "text-brand-400" : "text-brand-600"}`}>FIELD DATA</span>
+                <span className={`text-xs font-mono font-bold tracking-widest ${isDark ? "text-brand-400" : "text-brand-600"}`}>{t("fieldData")}</span>
               </div>
               <div className={`divide-y ${isDark ? "divide-neutral-700" : "divide-neutral-300"}`}>
                 {[
-                  ["Region", entry.region],
-                  ["First Record", entry.firstRecord],
-                  ["Est. Size", entry.estSize],
-                  ["Sightings", entry.sightings.toLocaleString()],
+                  [t("region"), entry.region],
+                  [t("firstRecord"), entry.firstRecord],
+                  [t("estSize"), entry.estSize],
+                  [t("sightings"), entry.sightings.toLocaleString()],
                 ].map(([label, value]) => (
                   <div key={label} className={`flex px-4 py-2 text-sm ${isDark ? "divide-neutral-700" : ""}`}>
                     <span className={`w-32 font-mono ${labelText}`}>{label}</span>
@@ -119,7 +123,7 @@ export default function FileDetail({ entry: raw }: { entry: any }) {
                 ))}
                 {/* Credibility bar */}
                 <div className={`flex items-center px-4 py-2 text-sm`}>
-                  <span className={`w-32 font-mono ${labelText}`}>Credibility</span>
+                  <span className={`w-32 font-mono ${labelText}`}>{t("credibility")}</span>
                   <div className="flex items-center gap-2 flex-1">
                     <div className={`flex-1 h-2 rounded-full ${isDark ? "bg-neutral-700" : "bg-neutral-200"}`}>
                       <div
@@ -139,13 +143,13 @@ export default function FileDetail({ entry: raw }: { entry: any }) {
         <div className="grid grid-cols-2 gap-6">
           {/* Overview */}
           <div className={`border ${sectionBorder} ${sectionShadow} ${sectionBg} rounded p-6`}>
-            <p className={`text-xs font-mono font-bold tracking-widest ${isDark ? "text-brand-400" : "text-brand-600"} mb-3`}>OVERVIEW</p>
+            <p className={`text-xs font-mono font-bold tracking-widest ${isDark ? "text-brand-400" : "text-brand-600"} mb-3`}>{t("overview")}</p>
             <p className={`text-sm leading-relaxed ${cardText}`}>{entry.overview}</p>
           </div>
 
           {/* Investigation Log */}
           <div className={`border ${sectionBorder} ${sectionShadow} ${sectionBg} rounded p-6`}>
-            <p className={`text-xs font-mono font-bold tracking-widest ${isDark ? "text-brand-400" : "text-brand-600"} mb-3`}>INVESTIGATION LOG</p>
+            <p className={`text-xs font-mono font-bold tracking-widest ${isDark ? "text-brand-400" : "text-brand-600"} mb-3`}>{t("investigationLog")}</p>
             <div className="space-y-4">
               {entry.logs.map((log: { date: string; content: string }) => (
                 <div key={log.date}>
@@ -161,8 +165,8 @@ export default function FileDetail({ entry: raw }: { entry: any }) {
       {/* File Footer */}
       <div className="bg-[#0d0d1a] border-t border-[#222233]">
         <div className="mx-auto max-w-7xl px-12 py-2 flex items-center justify-between text-[9px] font-mono text-neutral-500">
-          <span>🔒 CONFIDENTIAL — CRF INTERNAL USE ONLY</span>
-          <span>LAST UPDATED: {entry.lastUpdated}</span>
+          <span>🔒 {t("confidential")}</span>
+          <span>{t("lastUpdated")}: {entry.lastUpdated}</span>
         </div>
       </div>
     </div>

@@ -34,11 +34,11 @@ export default function ReportForm() {
       {/* Meta Bar */}
       <div className="bg-[#1a1a2e] border-b border-brand-900">
         <div className="mx-auto max-w-7xl px-12 py-4 flex items-center gap-6 text-xs font-mono">
-          <span className="text-brand-400 font-bold tracking-widest">NEW REPORT</span>
+          <span className="text-brand-400 font-bold tracking-widest">{t("newReport")}</span>
           <span className="w-px h-4 bg-[#333344]" />
           <span className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-yellow-500" />
-            <span className="text-neutral-300">PENDING SUBMISSION</span>
+            <span className="text-neutral-300">{t("pendingSubmission")}</span>
           </span>
         </div>
       </div>

@@ -27,6 +27,21 @@
     "imagePending": "[ IMAGE PENDING ]",
     "viewAll": "View All"
   },
+  "detail": {
+    "filed": "Filed",
+    "shop": "SHOP",
+    "subject": "SUBJECT",
+    "fieldData": "FIELD DATA",
+    "region": "Region",
+    "firstRecord": "First Record",
+    "estSize": "Est. Size",
+    "sightings": "Sightings",
+    "credibility": "Credibility",
+    "overview": "OVERVIEW",
+    "investigationLog": "INVESTIGATION LOG",
+    "confidential": "CONFIDENTIAL — CRF INTERNAL USE ONLY",
+    "lastUpdated": "LAST UPDATED"
+  },
   "search": {
     "label": "SEARCH DATABASE",
     "title": "Search Results",
@@ -43,7 +58,8 @@
     "sizeMedium": "1-3m",
     "sizeLarge": "> 3m",
     "clear": "Clear filters",
-    "noResults": "No matching files found."
+    "noResults": "No matching files found.",
+    "filterByTag": "FILTER BY TAG"
   },
   "creatureList": {
     "label": "CREATURE DATABASE",
@@ -90,6 +106,8 @@
     "label": "INVESTIGATION REQUEST",
     "title": "Submit a Sighting Report",
     "description": "Have you witnessed an unidentified creature or anomalous phenomenon? Submit your report to CRF for investigation.",
+    "newReport": "NEW REPORT",
+    "pendingSubmission": "PENDING SUBMISSION",
     "reporterName": "REPORTER NAME",
     "optional": "optional",
     "sightingDate": "SIGHTING DATE",
