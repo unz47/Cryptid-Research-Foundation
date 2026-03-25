@@ -2,6 +2,8 @@
 
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { getDefaultImage } from "@/lib/defaultImage";
+import Image from "next/image";
 
 const featuredCreatures = [
   { id: "tsuchinoko", name: "ツチノコ", nameEn: "Tsuchinoko", fileNo: "CRF-0042", classification: "CLASS-III", classColor: "bg-warning", region: "Japan", description: "日本の山林に生息するとされる太く短い蛇のような未確認生物。" },
@@ -25,9 +27,13 @@ export default function FeaturedCryptids() {
               className="group block bg-white rounded-lg border border-neutral-200 overflow-hidden no-underline transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5"
             >
               <div className="relative aspect-[4/3] bg-neutral-100 overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center text-neutral-300 text-sm font-mono">
-                  {t("imagePending")}
-                </div>
+                <Image
+                  src={getDefaultImage(creature.id)}
+                  alt={creature.nameEn}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
               </div>
               <div className="p-4">
                 <div className="flex items-center gap-2 mb-2">

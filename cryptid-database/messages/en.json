@@ -18,7 +18,8 @@
   "zones": {
     "label": "ANOMALOUS ZONES",
     "title": "Anomalous Zones",
-    "description": "Locations where spatial anomalies have been confirmed beyond cryptid sightings. CRF manages these as independent \"Z-Files\"."
+    "description": "Locations where spatial anomalies have been confirmed beyond cryptid sightings. CRF manages these as independent \"Z-Files\".",
+    "imagePending": "[ IMAGE PENDING ]"
   },
   "about": {
     "missionLabel": "OUR MISSION",

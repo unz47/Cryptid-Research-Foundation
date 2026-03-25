@@ -18,7 +18,8 @@
   "zones": {
     "label": "ANOMALOUS ZONES",
     "title": "異常空間・特異地点",
-    "description": "クリプティッドの目撃だけでなく、空間そのものに異常が確認されている地点。CRFでは「Zファイル」として独立管理しています。"
+    "description": "クリプティッドの目撃だけでなく、空間そのものに異常が確認されている地点。CRFでは「Zファイル」として独立管理しています。",
+    "imagePending": "[ 画像準備中 ]"
   },
   "about": {
     "missionLabel": "OUR MISSION",

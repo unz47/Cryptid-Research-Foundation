@@ -1,4 +1,6 @@
 import type { FileEntry } from "@/lib/data";
+import { getDefaultImage } from "@/lib/defaultImage";
+import Image from "next/image";
 
 const lightGrid = {
   backgroundImage: `
@@ -55,8 +57,14 @@ export default function FileDetail({ entry }: { entry: FileEntry }) {
         {/* Top: Image + Info */}
         <div className="flex gap-10 items-stretch">
           {/* Image placeholder */}
-          <div className={`w-[480px] shrink-0 rounded border ${sectionBorder} ${sectionShadow} ${sectionBg} flex items-center justify-center`}>
-            <span className={`text-sm font-mono ${labelText}`}>[ IMAGE PENDING ]</span>
+          <div className={`w-[480px] shrink-0 rounded border ${sectionBorder} ${sectionShadow} ${sectionBg} overflow-hidden relative`}>
+            <Image
+              src={entry.image || getDefaultImage(entry.slug)}
+              alt={entry.nameEn}
+              fill
+              className="object-cover"
+              sizes="480px"
+            />
           </div>
 
           {/* Info Panel */}
