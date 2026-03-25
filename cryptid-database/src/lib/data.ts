@@ -177,3 +177,11 @@ export const fileEntries: Record<string, FileEntry> = {
 export function getFileEntry(slug: string): FileEntry | undefined {
   return fileEntries[slug];
 }
+
+export function getCreatures(): FileEntry[] {
+  return Object.values(fileEntries).filter((e) => e.type === "creature");
+}
+
+export function getZones(): FileEntry[] {
+  return Object.values(fileEntries).filter((e) => e.type === "zone");
+}

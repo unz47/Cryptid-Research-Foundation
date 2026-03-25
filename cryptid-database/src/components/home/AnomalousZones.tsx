@@ -28,7 +28,10 @@ export default function AnomalousZones() {
     <section className="py-16 text-white" style={darkGridStyle}>
       <div className="mx-auto max-w-7xl px-4">
         <p className="text-xs font-mono font-bold tracking-widest text-brand-400 mb-2">{t("label")}</p>
-        <h2 className="text-white mb-3">{t("title")}</h2>
+        <div className="flex items-center justify-between mb-3">
+          <h2 className="text-white">{t("title")}</h2>
+          <Link href="/zones" className="text-sm font-mono text-brand-400 no-underline hover:underline">{t("viewAll")} →</Link>
+        </div>
         <p className="text-neutral-400 mb-8 max-w-2xl">{t("description")}</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {anomalousZones.map((zone) => (

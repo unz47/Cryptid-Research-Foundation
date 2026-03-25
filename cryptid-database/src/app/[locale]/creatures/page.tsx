@@ -1,18 +1,13 @@
+import { getCreatures } from "@/lib/data";
+import CreatureList from "@/components/creatures/CreatureList";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "All Cryptids",
-  description: "Browse our complete collection of cryptids and mythical creatures from around the world.",
+  title: "All Cryptids — CRF",
 };
 
-// UMA一覧ページ
-export default function CreaturesPage() {
-  return (
-    <div className="mx-auto max-w-7xl px-4 py-16">
-      <h1 className="mb-8">All Cryptids</h1>
-      <p className="text-neutral-500">
-        Creature list will be loaded from Contentful CMS.
-      </p>
-    </div>
-  );
+export default async function CreaturesPage({ searchParams }: { searchParams: Promise<{ page?: string }> }) {
+  const { page } = await searchParams;
+  const creatures = getCreatures();
+  return <CreatureList entries={creatures} page={Number(page) || 1} />;
 }

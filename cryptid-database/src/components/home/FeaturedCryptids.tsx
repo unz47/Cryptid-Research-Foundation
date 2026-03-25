@@ -18,7 +18,10 @@ export default function FeaturedCryptids() {
     <section className="py-16">
       <div className="mx-auto max-w-7xl px-4">
         <p className="text-xs font-mono font-bold tracking-widest text-brand-600 mb-2">{t("label")}</p>
-        <h2 className="mb-8">{t("title")}</h2>
+        <div className="flex items-center justify-between mb-8">
+          <h2>{t("title")}</h2>
+          <Link href="/creatures" className="text-sm font-mono text-brand-500 no-underline hover:underline">{t("viewAll")} →</Link>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {featuredCreatures.map((creature) => (
             <Link

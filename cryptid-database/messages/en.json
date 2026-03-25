@@ -2,7 +2,7 @@
   "nav": {
     "home": "Home",
     "creatures": "Creatures",
-    "regions": "Regions",
+    "zones": "Zones",
     "about": "About"
   },
   "hero": {
@@ -13,13 +13,23 @@
   "featured": {
     "label": "FEATURED FILES",
     "title": "Featured Cryptids",
-    "imagePending": "[ IMAGE PENDING ]"
+    "imagePending": "[ IMAGE PENDING ]",
+    "viewAll": "View All"
   },
   "zones": {
     "label": "ANOMALOUS ZONES",
     "title": "Anomalous Zones",
     "description": "Locations where spatial anomalies have been confirmed beyond cryptid sightings. CRF manages these as independent \"Z-Files\".",
-    "imagePending": "[ IMAGE PENDING ]"
+    "imagePending": "[ IMAGE PENDING ]",
+    "viewAll": "View All"
+  },
+  "creatureList": {
+    "label": "CREATURE DATABASE",
+    "title": "All Cryptids"
+  },
+  "zoneList": {
+    "label": "ZONE DATABASE",
+    "title": "All Anomalous Zones"
   },
   "about": {
     "missionLabel": "OUR MISSION",

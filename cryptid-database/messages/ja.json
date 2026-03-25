@@ -2,7 +2,7 @@
   "nav": {
     "home": "ホーム",
     "creatures": "クリーチャー",
-    "regions": "地域",
+    "zones": "異常空間",
     "about": "概要"
   },
   "hero": {
@@ -13,13 +13,23 @@
   "featured": {
     "label": "FEATURED FILES",
     "title": "注目の調査ファイル",
-    "imagePending": "[ 画像準備中 ]"
+    "imagePending": "[ 画像準備中 ]",
+    "viewAll": "すべて見る"
   },
   "zones": {
     "label": "ANOMALOUS ZONES",
     "title": "異常空間・特異地点",
     "description": "クリプティッドの目撃だけでなく、空間そのものに異常が確認されている地点。CRFでは「Zファイル」として独立管理しています。",
-    "imagePending": "[ 画像準備中 ]"
+    "imagePending": "[ 画像準備中 ]",
+    "viewAll": "すべて見る"
+  },
+  "creatureList": {
+    "label": "CREATURE DATABASE",
+    "title": "全クリーチャー一覧"
+  },
+  "zoneList": {
+    "label": "ZONE DATABASE",
+    "title": "全異常空間一覧"
   },
   "about": {
     "missionLabel": "OUR MISSION",
