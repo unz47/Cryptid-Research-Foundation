@@ -19,6 +19,7 @@ export interface FileEntry {
   overview: string;
   logs: { date: string; content: string }[];
   type: "creature" | "zone";
+  searchAliases: string[];
 }
 
 export const fileEntries: Record<string, FileEntry> = {
@@ -46,6 +47,7 @@ export const fileEntries: Record<string, FileEntry> = {
       { date: "2025-11-03", content: "奈良県吉野郡にて体毛サンプルを回収。DNA分析の結果、既知の爬虫類とは一致せず。追加調査を勧告。" },
     ],
     type: "creature",
+    searchAliases: ["つちのこ", "tsuchinoko"],
   },
   bigfoot: {
     slug: "bigfoot",
@@ -71,6 +73,7 @@ export const fileEntries: Record<string, FileEntry> = {
       { date: "2025-09-15", content: "オレゴン州にて赤外線カメラが未確認の大型二足歩行生物を捕捉。映像解析を継続。" },
     ],
     type: "creature",
+    searchAliases: ["びっぐふっと", "bigfoot", "sasquatch", "サスカッチ", "さすかっち"],
   },
   mothman: {
     slug: "mothman",
@@ -96,6 +99,7 @@ export const fileEntries: Record<string, FileEntry> = {
       { date: "2025-08-20", content: "目撃者インタビューを実施。共通する特徴：赤い発光体、無音飛行、強い恐怖感の誘発。" },
     ],
     type: "creature",
+    searchAliases: ["もすまん", "mothman"],
   },
   "bermuda-triangle": {
     slug: "bermuda-triangle",
@@ -121,6 +125,7 @@ export const fileEntries: Record<string, FileEntry> = {
       { date: "2025-07-22", content: "衛星画像解析により、海面温度の局所的異常を確認。原因調査を継続。" },
     ],
     type: "zone",
+    searchAliases: ["ばみゅーだ", "bermuda"],
   },
   "skinwalker-ranch": {
     slug: "skinwalker-ranch",
@@ -146,6 +151,7 @@ export const fileEntries: Record<string, FileEntry> = {
       { date: "2025-10-18", content: "[REDACTED] — アクセスには本部理事会の特別許可が必要です。" },
     ],
     type: "zone",
+    searchAliases: ["すきんうぉーかー", "skinwalker"],
   },
   aokigahara: {
     slug: "aokigahara",
@@ -171,6 +177,7 @@ export const fileEntries: Record<string, FileEntry> = {
       { date: "2025-06-30", content: "夜間調査にて原因不明の発光現象を記録。音響異常も同時に観測。" },
     ],
     type: "zone",
+    searchAliases: ["あおきがはら", "じゅかい", "aokigahara", "樹海"],
   },
 };
 
@@ -184,4 +191,38 @@ export function getCreatures(): FileEntry[] {
 
 export function getZones(): FileEntry[] {
   return Object.values(fileEntries).filter((e) => e.type === "zone");
+}
+
+export function getAllTags(): string[] {
+  const set = new Set<string>();
+  Object.values(fileEntries).forEach((e) => e.tags.forEach((t) => set.add(t)));
+  return Array.from(set).sort();
+}
+
+export function getAllRegions(): string[] {
+  const set = new Set<string>();
+  Object.values(fileEntries).forEach((e) => set.add(e.region));
+  return Array.from(set).sort();
+}
+
+export function getAllClassifications(): string[] {
+  return ["CLASS-I", "CLASS-II", "CLASS-III", "CLASS-IV", "CLASS-V", "CLASS-S"];
+}
+
+export function searchEntries(q?: string, tags?: string[], region?: string, classification?: string, type?: string, sizeRange?: string): FileEntry[] {
+  const text = (q || "").toLowerCase();
+  return Object.values(fileEntries).filter((e) => {
+    if (tags && tags.length > 0 && !tags.every((t) => e.tags.includes(t))) return false;
+    if (region && e.region !== region) return false;
+    if (classification && e.classification !== classification) return false;
+    if (type && e.type !== type) return false;
+    if (sizeRange) {
+      const num = parseFloat(e.estSize);
+      if (sizeRange === "small" && (isNaN(num) || num >= 1)) return false;
+      if (sizeRange === "medium" && (isNaN(num) || num < 1 || num >= 3)) return false;
+      if (sizeRange === "large" && (isNaN(num) || num < 3)) return false;
+    }
+    if (!text) return true;
+    return e.name.toLowerCase().includes(text) || e.nameEn.toLowerCase().includes(text) || e.fileNo.toLowerCase().includes(text) || e.tags.some((t) => t.toLowerCase().includes(text)) || e.searchAliases.some((a) => a.toLowerCase().includes(text));
+  });
 }

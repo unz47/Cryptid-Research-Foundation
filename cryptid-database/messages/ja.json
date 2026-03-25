@@ -7,7 +7,10 @@
   },
   "hero": {
     "title": "世界のクリプティッドを探索せよ",
-    "subtitle": "伝承と伝説に彩られた謎の生物たち。ツチノコからビッグフットまで——すべてのクリプティッドには物語がある。",
+    "subtitle": "目撃された。記録された。まだ、解明されていない。",
+    "searchPlaceholder": "名前、ファイル番号、タグで検索...",
+    "searchButton": "検索",
+    "noResults": "該当するファイルが見つかりません。",
     "cta": "全クリーチャーを見る"
   },
   "featured": {
@@ -22,6 +25,24 @@
     "description": "クリプティッドの目撃だけでなく、空間そのものに異常が確認されている地点。CRFでは「Zファイル」として独立管理しています。",
     "imagePending": "[ 画像準備中 ]",
     "viewAll": "すべて見る"
+  },
+  "search": {
+    "label": "SEARCH DATABASE",
+    "title": "検索結果",
+    "placeholder": "名前、ファイル番号、タグで検索...",
+    "button": "検索",
+    "resultsCount": "件のファイル",
+    "allRegions": "全地域",
+    "allClasses": "全クラス",
+    "allTypes": "全タイプ",
+    "typeCreature": "クリーチャー",
+    "typeZone": "異常空間",
+    "allSizes": "全サイズ",
+    "sizeSmall": "1m未満",
+    "sizeMedium": "1〜3m",
+    "sizeLarge": "3m以上",
+    "clear": "フィルター解除",
+    "noResults": "該当するファイルが見つかりません。"
   },
   "creatureList": {
     "label": "CREATURE DATABASE",

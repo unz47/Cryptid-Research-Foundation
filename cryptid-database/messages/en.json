@@ -7,7 +7,10 @@
   },
   "hero": {
     "title": "Discover the World's Cryptids",
-    "subtitle": "Explore mysterious creatures from folklore and legend. From Tsuchinoko to Bigfoot — every cryptid has a story.",
+    "subtitle": "Sighted. Documented. Still unexplained.",
+    "searchPlaceholder": "Search by name, file number, or tag...",
+    "searchButton": "Search",
+    "noResults": "No matching files found.",
     "cta": "Browse All Creatures"
   },
   "featured": {
@@ -22,6 +25,24 @@
     "description": "Locations where spatial anomalies have been confirmed beyond cryptid sightings. CRF manages these as independent \"Z-Files\".",
     "imagePending": "[ IMAGE PENDING ]",
     "viewAll": "View All"
+  },
+  "search": {
+    "label": "SEARCH DATABASE",
+    "title": "Search Results",
+    "placeholder": "Search by name, file number, or tag...",
+    "button": "Search",
+    "resultsCount": "files found",
+    "allRegions": "All Regions",
+    "allClasses": "All Classes",
+    "allTypes": "All Types",
+    "typeCreature": "Creature",
+    "typeZone": "Zone",
+    "allSizes": "All Sizes",
+    "sizeSmall": "< 1m",
+    "sizeMedium": "1-3m",
+    "sizeLarge": "> 3m",
+    "clear": "Clear filters",
+    "noResults": "No matching files found."
   },
   "creatureList": {
     "label": "CREATURE DATABASE",
