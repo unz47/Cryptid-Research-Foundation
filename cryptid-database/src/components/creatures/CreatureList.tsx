@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
-import { getDefaultImage } from "@/lib/defaultImage";
+import { getImage } from "@/lib/defaultImage";
 import Pagination, { PER_PAGE } from "@/components/ui/Pagination";
 import type { FileEntry } from "@/lib/data";
 
@@ -24,7 +24,7 @@ export default function CreatureList({ entries, page }: { entries: FileEntry[]; 
               className="group block bg-white rounded-lg border border-neutral-200 overflow-hidden no-underline transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5"
             >
               <div className="relative aspect-[4/3] bg-neutral-100 overflow-hidden">
-                <Image src={c.image || getDefaultImage(c.slug)} alt={c.nameEn} fill className="object-cover group-hover:scale-105 transition-transform duration-300" sizes="(max-width: 768px) 100vw, 33vw" />
+                <Image src={getImage(c.image, c.slug)} alt={c.nameEn} fill className="object-cover group-hover:scale-105 transition-transform duration-300" sizes="(max-width: 768px) 100vw, 33vw" />
               </div>
               <div className="p-4">
                 <div className="flex items-center gap-2 mb-2">

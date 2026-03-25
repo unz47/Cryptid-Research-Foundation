@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { Link, useRouter } from "@/i18n/navigation";
 import Image from "next/image";
-import { getDefaultImage } from "@/lib/defaultImage";
+import { getImage } from "@/lib/defaultImage";
 import { fileEntries, type FileEntry } from "@/lib/data";
 
 const allEntries = Object.values(fileEntries);
@@ -218,7 +218,7 @@ export default function SearchResults({ results, query, activeTags, allTags, all
                 className="group block bg-white rounded-lg border border-neutral-200 overflow-hidden no-underline transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5"
               >
                 <div className="relative aspect-[4/3] bg-neutral-100 overflow-hidden">
-                  <Image src={r.image || getDefaultImage(r.slug)} alt={r.nameEn} fill className="object-cover group-hover:scale-105 transition-transform duration-300" sizes="(max-width: 768px) 100vw, 33vw" />
+                  <Image src={getImage(r.image, r.slug)} alt={r.nameEn} fill className="object-cover group-hover:scale-105 transition-transform duration-300" sizes="(max-width: 768px) 100vw, 33vw" />
                 </div>
                 <div className="p-4">
                   <div className="flex items-center gap-2 mb-2">

@@ -15,7 +15,7 @@ export interface FileEntry {
   sightings: number;
   credibility: number;
   tags: string[];
-  image: string;
+  image: string | string[];
   overview: string;
   logs: { date: string; content: string }[];
   type: "creature" | "zone";
@@ -118,7 +118,7 @@ export const fileEntries: Record<string, FileEntry> = {
     sightings: 4271,
     credibility: 5.2,
     tags: ["AQUATIC", "EUROPE", "LACUSTRINE"],
-    image: "",
+    image: ["/creatures/nessie-1.jpg", "/creatures/nessie-2.jpg"],
     overview: "ネッシーは、スコットランド北部のネス湖に生息するとされる大型水棲クリプティッドである。",
     logs: [
       { date: "2026-03-10", content: "ネス湖南岸にて水面の異常な波紋を観測。ソナーに全長約8mの移動体を捕捉するも、追跡中にロスト。" },

@@ -1,4 +1,4 @@
-import { getDefaultImage } from "@/lib/defaultImage";
+import { getImages } from "@/lib/defaultImage";
 import Image from "next/image";
 
 const lightGrid = {
@@ -34,6 +34,7 @@ function n(entry: any) {
 
 export default function FileDetail({ entry: raw }: { entry: any }) {
   const entry = n(raw);
+  const images = getImages(entry.image, entry.slug);
   const isDark = entry.type === "zone";
   const bg = isDark ? "text-white" : "text-neutral-800";
   const gridStyle = isDark ? darkGrid : lightGrid;
@@ -68,14 +69,12 @@ export default function FileDetail({ entry: raw }: { entry: any }) {
         {/* Top: Image + Info */}
         <div className="flex gap-10 items-stretch">
           {/* Image placeholder */}
-          <div className={`w-[480px] shrink-0 rounded border ${sectionBorder} ${sectionShadow} ${sectionBg} overflow-hidden relative`}>
-            <Image
-              src={entry.image || getDefaultImage(entry.slug)}
-              alt={entry.nameEn}
-              fill
-              className="object-cover"
-              sizes="480px"
-            />
+          <div className={`w-[480px] shrink-0 rounded border ${sectionBorder} ${sectionShadow} ${sectionBg} overflow-hidden flex flex-col gap-2`}>
+            {images.map((src, i) => (
+              <div key={i} className="relative aspect-[4/3]">
+                <Image src={src} alt={`${entry.nameEn} ${i + 1}`} fill className="object-cover" sizes="480px" />
+              </div>
+            ))}
           </div>
 
           {/* Info Panel */}

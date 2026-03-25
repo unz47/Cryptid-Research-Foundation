@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
-import { getDefaultImage } from "@/lib/defaultImage";
+import { getImage } from "@/lib/defaultImage";
 import Pagination, { PER_PAGE } from "@/components/ui/Pagination";
 import type { FileEntry } from "@/lib/data";
 
@@ -34,7 +34,7 @@ export default function ZoneList({ entries, page }: { entries: FileEntry[]; page
               className="group block bg-neutral-800 border border-neutral-700 rounded-lg overflow-hidden no-underline transition-all duration-300 hover:shadow-xl hover:shadow-black/30 hover:-translate-y-0.5"
             >
               <div className="relative aspect-[4/3] bg-neutral-700 overflow-hidden">
-                <Image src={z.image || getDefaultImage(z.slug)} alt={z.nameEn} fill className="object-cover group-hover:scale-105 transition-transform duration-300" sizes="(max-width: 768px) 100vw, 33vw" />
+                <Image src={getImage(z.image, z.slug)} alt={z.nameEn} fill className="object-cover group-hover:scale-105 transition-transform duration-300" sizes="(max-width: 768px) 100vw, 33vw" />
               </div>
               <div className="p-4">
                 <div className="flex items-center gap-2 mb-2">

@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { getDefaultImage } from "@/lib/defaultImage";
+import { getImage } from "@/lib/defaultImage";
 import Image from "next/image";
 
 const featuredCreatures = [
@@ -31,7 +31,7 @@ export default function FeaturedCryptids() {
             >
               <div className="relative aspect-[4/3] bg-neutral-100 overflow-hidden">
                 <Image
-                  src={getDefaultImage(creature.id)}
+                  src={getImage(undefined, creature.id)}
                   alt={creature.nameEn}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"

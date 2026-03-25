@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { getDefaultImage } from "@/lib/defaultImage";
+import { getImage } from "@/lib/defaultImage";
 import Image from "next/image";
 
 const anomalousZones = [
@@ -42,7 +42,7 @@ export default function AnomalousZones() {
             >
               <div className="relative aspect-[4/3] bg-neutral-700 overflow-hidden">
                 <Image
-                  src={getDefaultImage(zone.id)}
+                  src={getImage(undefined, zone.id)}
                   alt={zone.nameEn}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
