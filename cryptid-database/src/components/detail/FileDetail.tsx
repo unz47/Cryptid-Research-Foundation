@@ -1,4 +1,3 @@
-import type { FileEntry } from "@/lib/data";
 import { getDefaultImage } from "@/lib/defaultImage";
 import Image from "next/image";
 
@@ -22,7 +21,19 @@ const darkGrid = {
   backgroundColor: "#171717",
 };
 
-export default function FileDetail({ entry }: { entry: FileEntry }) {
+/* eslint-disable @typescript-eslint/no-explicit-any */
+function n(entry: any) {
+  return {
+    type: entry.type, slug: entry.slug, fileNo: entry.fileNo || entry.file_no, name: entry.name, nameEn: entry.nameEn || entry.name_en,
+    classification: entry.classification, classColor: entry.classColor || entry.class_color, status: entry.status, statusColor: entry.statusColor || entry.status_color,
+    filedDate: entry.filedDate || entry.filed_date, lastUpdated: entry.lastUpdated || entry.last_updated, region: entry.region,
+    firstRecord: entry.firstRecord || entry.first_record, estSize: entry.estSize || entry.est_size, sightings: entry.sightings,
+    credibility: entry.credibility, tags: entry.tags, image: entry.image, overview: entry.overview, logs: entry.logs,
+  };
+}
+
+export default function FileDetail({ entry: raw }: { entry: any }) {
+  const entry = n(raw);
   const isDark = entry.type === "zone";
   const bg = isDark ? "text-white" : "text-neutral-800";
   const gridStyle = isDark ? darkGrid : lightGrid;
@@ -77,7 +88,7 @@ export default function FileDetail({ entry }: { entry: FileEntry }) {
 
             {/* Tags */}
             <div className="flex gap-2">
-              {entry.tags.map((tag) => (
+              {entry.tags.map((tag: string) => (
                 <span key={tag} className={`text-[10px] font-mono font-bold px-2 py-1 rounded border ${sectionBorder} ${labelText}`}>
                   {tag}
                 </span>
@@ -131,7 +142,7 @@ export default function FileDetail({ entry }: { entry: FileEntry }) {
           <div className={`border ${sectionBorder} ${sectionShadow} ${sectionBg} rounded p-6`}>
             <p className={`text-xs font-mono font-bold tracking-widest ${isDark ? "text-brand-400" : "text-brand-600"} mb-3`}>INVESTIGATION LOG</p>
             <div className="space-y-4">
-              {entry.logs.map((log) => (
+              {entry.logs.map((log: { date: string; content: string }) => (
                 <div key={log.date}>
                   <p className={`text-xs font-mono ${labelText} mb-1`}>{log.date}</p>
                   <p className={`text-sm leading-relaxed ${cardText}`}>{log.content}</p>
