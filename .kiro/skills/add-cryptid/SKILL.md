@@ -108,3 +108,136 @@ VALUES (
   searchAliases: ["ひらがな", "romaji"],
 },
 ```
+
+## 画像・動画プロンプト生成
+
+エントリ作成時に、以下の3種類のプロンプトも生成する。
+
+### nanobanana（画像生成）用プロンプト — 調査記録写真風
+
+カード用サムネイル画像。「本物の目撃写真」に見えるリアリティが最重要。SNSでシェアされたときに「これ本物？」と思わせる画像を目指す。
+
+**必須要素（この順序で構成する）:**
+1. **カメラ/メディア指定** — 撮影機材を明示してリアリティを出す
+2. **被写体** — 部分的にしか見えない（全体像は絶対に見せない）
+3. **環境** — 具体的な生息地、天候、時間帯
+4. **光源** — 自然光、懐中電灯、月明かり等の具体的な光源
+5. **テクスチャ** — フィルムグレイン、レンズの汚れ、ノイズ等の劣化要素
+6. **ムード** — 不安感、緊張感を演出する形容詞
+
+**バズるためのルール:**
+- 被写体は画面の端や奥に配置（中央に堂々と置かない）
+- 「撮影者が慌てて撮った」感を出す（ブレ、ピンボケ、フレーミングのズレ）
+- 暗すぎず明るすぎず、「ギリギリ何かが見える」程度の露出
+- 赤い目、発光、異常な影など「一つだけ不自然な要素」を入れる
+
+**NG:**
+- カートゥーン、アニメ、イラスト風
+- 明るく鮮明な写真
+- 被写体が完全に見えている構図
+- テキスト、ウォーターマーク
+
+**テンプレート（クリーチャー）:**
+```
+Trail camera photograph, night vision green tint, [creature] partially visible [position: behind trees / at edge of frame / in fog], [specific habitat with detail], [specific weather/time], motion blur on subject, lens flare from [light source], heavy film grain, slightly overexposed highlights, timestamp overlay style, raw unprocessed look, no text, no watermark
+```
+
+**テンプレート（ゾーン）:**
+```
+Aerial reconnaissance photograph of [location], taken from [altitude/angle], [specific atmospheric anomaly: strange lights / unusual fog pattern / color distortion], [surrounding landscape detail], overcast sky, desaturated color palette, visible film grain, slight lens distortion at edges, declassified document aesthetic, no text, no watermark
+```
+
+**良い例:**
+```
+Trail camera photograph, infrared night vision, large bipedal silhouette partially visible behind dense pine trees at the far right edge of frame, Pacific Northwest old-growth forest, heavy ground fog, 2AM timestamp feel, motion blur on the subject suggesting rapid movement, two faint reflective points where eyes would be, heavy ISO noise, slightly out of focus, raw unprocessed trail cam quality, no text, no watermark
+```
+
+### Kling（動画生成）用プロンプト
+
+5-10秒の「偶然撮れた映像」。Klingはショット単位で考えるので、映画監督のように指示する。
+
+**必須要素（Kling 3.0最適化）:**
+1. **カメラ** — 具体的なカメラの動き（handheld drift, crash zoom等）
+2. **被写体** — 何が映り、どう動くか（一瞬だけ映る）
+3. **環境** — 場所の具体的なディテール
+4. **光源** — 光の質と方向
+5. **テクスチャ** — VHSノイズ、グレイン、グリッチ等
+6. **感情** — 撮影者の反応（カメラが揺れる、急にパンする等）
+
+**バズるためのルール:**
+- 最初の2秒は「普通の風景」→ 突然何かが映る構成
+- カメラの動きで撮影者の驚きを表現（急なパン、ズーム、手ブレ増加）
+- 被写体は3秒以内に消える（長く映しすぎない）
+- 音の指示は不要（Klingは映像のみ）
+
+**テンプレート（クリーチャー）:**
+```
+Handheld camcorder footage, slight drift and sway, [environment establishing shot for 2 seconds], suddenly [creature action] at [position in frame], camera operator startles and [camera reaction: whip-pan / crash zoom / stumble], subject [disappearance action] in [direction], camera lingers on empty [environment] with [residual evidence], VHS camcorder aesthetic with chromatic aberration and tracking lines, shot on consumer-grade camcorder, [time of day] lighting
+```
+
+**テンプレート（ゾーン）:**
+```
+Drone footage, smooth forward glide over [location landscape], steady establishing shot, suddenly [anomaly: electromagnetic interference / visual distortion / impossible light], camera [glitch behavior: static burst / frame skip / color inversion] for 1 second, footage stabilizes showing [aftermath or empty scene], then [second subtle anomaly], desaturated color grade with crushed blacks, surveillance footage timestamp feel
+```
+
+**良い例:**
+```
+Handheld camcorder footage with subtle shoulder-cam sway, filming a misty Scottish loch at dawn from the shoreline, calm water reflecting grey sky for 2 seconds, suddenly a long dark shape breaks the surface 50 meters out creating a wake, camera operator gasps and crash-zooms in shakily, the shape submerges leaving only ripples, camera holds on the disturbing still water, VHS camcorder aesthetic with heavy grain and chromatic aberration, early morning diffused light, visible breath condensation near lens
+```
+
+### nanobanana（グッズ用カワイイ）プロンプト
+
+Etsyショップ向けのグッズデザイン。ステッカー、Tシャツ、トートバッグ等に使える。「買いたくなる」デザインが最重要。
+
+**売れるデザインの法則（Etsy調査に基づく）:**
+- **大きな目 + 小さな体** — chibi/デフォルメ比率（頭:体 = 1:1 or 2:1）
+- **丸いシルエット** — 角張った形より丸い方が「かわいい」と認識される
+- **2-3色のシンプルな配色** — パステル系 or ビビッド系（中途半端な色は避ける）
+- **表情は「ちょっと困り顔」or「ニコニコ」** — 無表情はNG
+- **小物やアクセサリー** — その生物の特徴を可愛くアレンジした小物を持たせる
+- **太いアウトライン** — ダイカットステッカーとして映える
+- **白背景** — 印刷・加工しやすい
+
+**必須要素:**
+1. **被写体** — chibi/kawaii版の生物名
+2. **体型** — round body, chubby, squishy等
+3. **表情** — big sparkly eyes + 具体的な表情
+4. **色** — 具体的なパステルカラー指定（"pastel mint and lavender"等）
+5. **小物** — その生物らしい可愛い小物（マフラー、帽子、食べ物等）
+6. **スタイル** — flat illustration, thick outline, die-cut sticker
+7. **背景** — solid white background
+
+**NG:**
+- リアル、怖い、グロテスク、暗い
+- 細かすぎるディテール（印刷で潰れる）
+- 背景が複雑（ステッカーカットが難しくなる）
+
+**テンプレート（クリーチャー）:**
+```
+Cute kawaii chibi [creature name], [body shape: round chubby body / squishy bean shape], [head-to-body ratio], big sparkly [eye color] eyes, [specific expression: happy smile / shy blush / playful wink], [2-3 pastel colors specified], [signature cute accessory related to creature's lore], thick black outline, simple flat illustration style, die-cut vinyl sticker design, solid white background, no text, no watermark
+```
+
+**テンプレート（ゾーン）:**
+```
+Cute kawaii illustration of [location], chibi style, [location rendered as adorable character or scene], [2-3 pastel colors], tiny cute [relevant creatures: ghosts / spirits / mysterious orbs] with big eyes scattered around, [signature element of the location made cute], thick outlines, simple flat design, die-cut sticker layout, solid white background, no text, no watermark
+```
+
+**良い例:**
+```
+Cute kawaii chibi Loch Ness Monster, squishy bean-shaped body, head slightly larger than body, big sparkly teal eyes with star-shaped highlights, shy blushing smile with tiny fangs, pastel teal and soft lavender color scheme, wearing a tiny red tartan scarf, holding a small fish in one flipper, thick black outline, simple flat illustration style, die-cut vinyl sticker design, solid white background, no text, no watermark
+```
+
+### 出力フォーマット
+
+エントリ作成後、以下の形式でプロンプトを提示する:
+
+```
+📸 nanobanana プロンプト（調査写真風）:
+[生成したプロンプト]
+
+🎬 Kling プロンプト:
+[生成したプロンプト]
+
+🧸 nanobanana プロンプト（グッズ用カワイイ）:
+[生成したプロンプト]
+```
