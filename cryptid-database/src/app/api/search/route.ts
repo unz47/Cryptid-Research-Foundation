@@ -3,6 +3,7 @@ import { supabase } from "@/lib/supabase";
 
 export async function GET(req: NextRequest) {
   const p = req.nextUrl.searchParams;
+  const locale = p.get("locale") || "ja";
   const q = p.get("q") || "";
   const tags = p.get("tags")?.split(",").filter(Boolean) || [];
   const region = p.get("region") || "";
@@ -50,5 +51,14 @@ export async function GET(req: NextRequest) {
   const allRegions = [...new Set((allEntries || []).map((e: Record<string, unknown>) => e.region as string))].sort();
   const allClassifications = ["CLASS-I", "CLASS-II", "CLASS-III", "CLASS-IV", "CLASS-V", "CLASS-S"];
 
-  return NextResponse.json({ results, allTags, allRegions, allClassifications });
+  return NextResponse.json({ results: localize(results, locale), allTags, allRegions, allClassifications });
+}
+
+function localize(data: Record<string, unknown>[], locale: string) {
+  if (locale === "ja") return data;
+  return data.map((e) => ({
+    ...e,
+    overview: (e.overview_en as string) || e.overview,
+    logs: (e.logs_en as unknown[])?.length ? e.logs_en : e.logs,
+  }));
 }

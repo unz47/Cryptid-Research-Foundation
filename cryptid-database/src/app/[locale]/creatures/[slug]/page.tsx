@@ -11,15 +11,20 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return { title: `${data.file_no} ${data.name_en}` };
 }
 
-export default async function CreatureDetailPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
+function localize(entry: Record<string, unknown>, locale: string) {
+  if (locale === "ja") return entry;
+  return { ...entry, overview: entry.overview_en || entry.overview, logs: (entry.logs_en as unknown[])?.length ? entry.logs_en : entry.logs };
+}
+
+export default async function CreatureDetailPage({ params }: { params: Promise<{ slug: string; locale: string }> }) {
+  const { slug, locale } = await params;
   const { data } = await supabase.from("file_entries").select("*").eq("slug", slug).single();
   if (!data) notFound();
 
   return (
     <>
       <Breadcrumb fileNo={data.file_no} nameEn={data.name_en} />
-      <FileDetail entry={data} />
+      <FileDetail entry={localize(data, locale)} />
     </>
   );
 }
