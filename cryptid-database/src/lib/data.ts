@@ -181,48 +181,4 @@ export const fileEntries: Record<string, FileEntry> = {
   },
 };
 
-export function getFileEntry(slug: string): FileEntry | undefined {
-  return fileEntries[slug];
-}
-
-export function getCreatures(): FileEntry[] {
-  return Object.values(fileEntries).filter((e) => e.type === "creature");
-}
-
-export function getZones(): FileEntry[] {
-  return Object.values(fileEntries).filter((e) => e.type === "zone");
-}
-
-export function getAllTags(): string[] {
-  const set = new Set<string>();
-  Object.values(fileEntries).forEach((e) => e.tags.forEach((t) => set.add(t)));
-  return Array.from(set).sort();
-}
-
-export function getAllRegions(): string[] {
-  const set = new Set<string>();
-  Object.values(fileEntries).forEach((e) => set.add(e.region));
-  return Array.from(set).sort();
-}
-
-export function getAllClassifications(): string[] {
-  return ["CLASS-I", "CLASS-II", "CLASS-III", "CLASS-IV", "CLASS-V", "CLASS-S"];
-}
-
-export function searchEntries(q?: string, tags?: string[], region?: string, classification?: string, type?: string, sizeRange?: string): FileEntry[] {
-  const text = (q || "").toLowerCase();
-  return Object.values(fileEntries).filter((e) => {
-    if (tags && tags.length > 0 && !tags.every((t) => e.tags.includes(t))) return false;
-    if (region && e.region !== region) return false;
-    if (classification && e.classification !== classification) return false;
-    if (type && e.type !== type) return false;
-    if (sizeRange) {
-      const num = parseFloat(e.estSize);
-      if (sizeRange === "small" && (isNaN(num) || num >= 1)) return false;
-      if (sizeRange === "medium" && (isNaN(num) || num < 1 || num >= 3)) return false;
-      if (sizeRange === "large" && (isNaN(num) || num < 3)) return false;
-    }
-    if (!text) return true;
-    return e.name.toLowerCase().includes(text) || e.nameEn.toLowerCase().includes(text) || e.fileNo.toLowerCase().includes(text) || e.tags.some((t) => t.toLowerCase().includes(text)) || e.searchAliases.some((a) => a.toLowerCase().includes(text));
-  });
-}
+// fileEntries is still used by HeroSearch and SearchResults for client-side predictive search
