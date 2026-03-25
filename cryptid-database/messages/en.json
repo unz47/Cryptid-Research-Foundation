@@ -3,6 +3,7 @@
     "home": "Home",
     "creatures": "Creatures",
     "zones": "Zones",
+    "report": "Report",
     "about": "About"
   },
   "hero": {
@@ -84,6 +85,31 @@
     "PENDING REVIEW": "Awaiting review of new reports",
     "CASE CLOSED": "Investigation complete, conclusions finalized",
     "CLASSIFIED": "Classified — restricted access"
+  },
+  "report": {
+    "label": "INVESTIGATION REQUEST",
+    "title": "Submit a Sighting Report",
+    "description": "Have you witnessed an unidentified creature or anomalous phenomenon? Submit your report to CRF for investigation.",
+    "reporterName": "REPORTER NAME",
+    "optional": "optional",
+    "sightingDate": "SIGHTING DATE",
+    "sightingLocation": "LOCATION",
+    "locationPlaceholder": "e.g. Mt. Fuji, Yamanashi, Japan",
+    "reportType": "REPORT TYPE",
+    "type_creature": "Creature",
+    "type_zone": "Anomalous Zone",
+    "type_other": "Other",
+    "features": "OBSERVED FEATURES",
+    "featuresPlaceholder": "e.g. Bipedal, approx. 2m tall, dark fur, glowing eyes",
+    "detailDescription": "DETAILED DESCRIPTION",
+    "descriptionPlaceholder": "Describe the encounter in detail: time, weather, duration, behavior observed...",
+    "evidence": "EVIDENCE",
+    "dropzone": "Drop files here or click to upload",
+    "dropzoneHint": "Images or video — max 5 files",
+    "submit": "SUBMIT REPORT",
+    "disclaimer": "All reports are processed through CRF's standard review protocol. Thank you for contributing to cryptid research.",
+    "successTitle": "Report Submitted",
+    "successMessage": "Your sighting report has been received. A CRF investigator will review it shortly. Report ID will be assigned upon verification."
   },
   "footer": {
     "copyright": "© {year} Cryptid Research Foundation. All rights reserved."

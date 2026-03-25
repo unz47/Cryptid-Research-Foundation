@@ -15,6 +15,7 @@ export function Header() {
     { href: "/", label: t("home") },
     { href: "/creatures", label: t("creatures") },
     { href: "/zones", label: t("zones") },
+    { href: "/report", label: t("report") },
     { href: "/about", label: t("about") },
   ] as const;
 

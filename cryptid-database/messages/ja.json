@@ -3,6 +3,7 @@
     "home": "ホーム",
     "creatures": "クリーチャー",
     "zones": "異常空間",
+    "report": "報告",
     "about": "概要"
   },
   "hero": {
@@ -84,6 +85,31 @@
     "PENDING REVIEW": "新規報告の審査待ち",
     "CASE CLOSED": "調査完了・結論確定",
     "CLASSIFIED": "機密扱い・アクセス制限"
+  },
+  "report": {
+    "label": "INVESTIGATION REQUEST",
+    "title": "目撃報告を提出する",
+    "description": "未確認生物または異常現象を目撃しましたか？CRFに報告を提出し、調査を依頼してください。",
+    "reporterName": "報告者名",
+    "optional": "任意",
+    "sightingDate": "目撃日",
+    "sightingLocation": "目撃場所",
+    "locationPlaceholder": "例: 山梨県 富士山麓",
+    "reportType": "報告タイプ",
+    "type_creature": "未確認生物",
+    "type_zone": "異常空間",
+    "type_other": "その他",
+    "features": "観察された特徴",
+    "featuresPlaceholder": "例: 二足歩行、体長約2m、黒い体毛、発光する目",
+    "detailDescription": "詳細な状況説明",
+    "descriptionPlaceholder": "遭遇の詳細を記述してください：時刻、天候、持続時間、観察された行動...",
+    "evidence": "証拠資料",
+    "dropzone": "ファイルをドロップ、またはクリックしてアップロード",
+    "dropzoneHint": "画像または動画 — 最大5ファイル",
+    "submit": "報告を提出する",
+    "disclaimer": "すべての報告はCRFの標準審査プロトコルに基づき処理されます。クリプティッド研究へのご協力に感謝いたします。",
+    "successTitle": "報告を受理しました",
+    "successMessage": "目撃報告が受理されました。CRF調査員が速やかに審査を行います。検証完了後、レポートIDが付与されます。"
   },
   "footer": {
     "copyright": "© {year} Cryptid Research Foundation. All rights reserved."
