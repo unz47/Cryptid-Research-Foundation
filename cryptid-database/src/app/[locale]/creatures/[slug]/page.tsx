@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 function localize(entry: Record<string, unknown>, locale: string) {
   if (locale === "ja") return entry;
-  return { ...entry, overview: entry.overview_en || entry.overview, logs: (entry.logs_en as unknown[])?.length ? entry.logs_en : entry.logs };
+  return { ...entry, name: entry.name_en || entry.name, name_en: entry.name, overview: entry.overview_en || entry.overview, logs: (entry.logs_en as unknown[])?.length ? entry.logs_en : entry.logs };
 }
 
 export default async function CreatureDetailPage({ params }: { params: Promise<{ slug: string; locale: string }> }) {

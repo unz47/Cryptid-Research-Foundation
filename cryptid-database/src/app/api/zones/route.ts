@@ -12,7 +12,7 @@ function localize(data: Record<string, unknown>[], locale: string) {
   if (locale === "ja") return data;
   return data.map((e) => ({
     ...e,
-    overview: (e.overview_en as string) || e.overview,
+    name: (e.name_en as string) || e.name, name_en: e.name as string, overview: (e.overview_en as string) || e.overview,
     logs: (e.logs_en as unknown[])?.length ? e.logs_en : e.logs,
   }));
 }
