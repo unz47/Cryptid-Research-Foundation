@@ -2,15 +2,28 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { supabase } from "@/lib/supabase";
 import EvidenceUpload from "./EvidenceUpload";
 
 export default function ReportForm() {
   const t = useTranslations("report");
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // TODO: POST to Google Forms or API endpoint
+    setError(false);
+    const fd = new FormData(e.currentTarget);
+    const { error: err } = await supabase.from("reports").insert({
+      reporter: fd.get("reporter") || "",
+      sighting_date: fd.get("date"),
+      location: fd.get("location"),
+      type: fd.get("type"),
+      features: fd.get("features"),
+      description: fd.get("description"),
+      evidence_urls: fd.getAll("evidence_urls"),
+    });
+    if (err) { setError(true); return; }
     setSubmitted(true);
   };
 
@@ -100,6 +113,7 @@ export default function ReportForm() {
 
           {/* Submit */}
           <div className="pt-4">
+            {error && <p className="text-red-500 text-xs font-mono mb-2">送信に失敗しました。もう一度お試しください。</p>}
             <button type="submit" className="w-full py-3 rounded-md bg-brand-600 hover:bg-brand-700 text-white font-mono font-bold text-sm transition-all duration-200 hover:scale-[1.01] active:scale-[0.99]">
               {t("submit")}
             </button>
