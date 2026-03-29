@@ -6,9 +6,9 @@ import { getImage } from "@/lib/defaultImage";
 import Image from "next/image";
 
 const anomalousZones = [
-  { id: "bermuda-triangle", name: "バミューダトライアングル", nameEn: "Bermuda Triangle", fileNo: "CRF-Z001", classification: "CLASS-V", classColor: "bg-red-800", region: "Atlantic Ocean", description: "大西洋上の三角海域。航空機・船舶の原因不明の消失が多数報告されている。" },
-  { id: "skinwalker-ranch", name: "スキンウォーカー牧場", nameEn: "Skinwalker Ranch", fileNo: "CRF-Z008", classification: "CLASS-S", classColor: "bg-neutral-900", region: "Utah, USA", description: "UFO、ポルターガイスト、未確認生物など複合的な異常現象が集中する特異地点。" },
-  { id: "aokigahara", name: "青木ヶ原樹海", nameEn: "Aokigahara", fileNo: "CRF-Z012", classification: "CLASS-III", classColor: "bg-warning", region: "Japan", description: "富士山麓に広がる原生林。磁場異常とコンパスの狂いが報告され、複数の未解明現象が記録されている。" },
+  { id: "bermuda-triangle", name: "バミューダトライアングル", nameEn: "Bermuda Triangle", fileNo: "CRF-Z001", classification: "CLASS-V", classColor: "bg-red-800", region: "Atlantic Ocean", description: "大西洋上の三角海域。航空機・船舶の原因不明の消失が多数報告されている。", image: "" },
+  { id: "skinwalker-ranch", name: "スキンウォーカー牧場", nameEn: "Skinwalker Ranch", fileNo: "CRF-Z008", classification: "CLASS-S", classColor: "bg-neutral-900", region: "Utah, USA", description: "UFO、ポルターガイスト、未確認生物など複合的な異常現象が集中する特異地点。", image: "" },
+  { id: "aokigahara", name: "青木ヶ原樹海", nameEn: "Aokigahara", fileNo: "CRF-Z012", classification: "CLASS-III", classColor: "bg-warning", region: "Japan", description: "富士山麓に広がる原生林。磁場異常とコンパスの狂いが報告され、複数の未解明現象が記録されている。", image: "" },
 ];
 
 const darkGridStyle = {
@@ -42,7 +42,7 @@ export default function AnomalousZones() {
             >
               <div className="relative aspect-[4/3] bg-neutral-700 overflow-hidden">
                 <Image
-                  src={getImage(undefined, zone.id)}
+                  src={getImage(zone.image, zone.id)}
                   alt={zone.nameEn}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"

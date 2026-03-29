@@ -130,6 +130,7 @@
     "successMessage": "Your sighting report has been received. A CRF investigator will review it shortly. Report ID will be assigned upon verification."
   },
   "footer": {
-    "copyright": "© {year} Cryptid Research Foundation. All rights reserved."
+    "copyright": "© {year} Cryptid Research Foundation. All rights reserved.",
+    "disclaimer": "This website is a work of fiction. The Cryptid Research Foundation (CRF) is a fictional organization. All investigation reports, images, and footage are entirely fictional."
   }
 }

@@ -6,9 +6,9 @@ import { getImage } from "@/lib/defaultImage";
 import Image from "next/image";
 
 const featuredCreatures = [
-  { id: "tsuchinoko", name: "ツチノコ", nameEn: "Tsuchinoko", fileNo: "CRF-0042", classification: "CLASS-III", classColor: "bg-warning", region: "Japan", description: "日本の山林に生息するとされる太く短い蛇のような未確認生物。" },
-  { id: "bigfoot", name: "ビッグフット", nameEn: "Bigfoot", fileNo: "CRF-0001", classification: "CLASS-IV", classColor: "bg-accent-500", region: "North America", description: "北米の森林地帯で目撃される大型の二足歩行類人猿。" },
-  { id: "mothman", name: "モスマン", nameEn: "Mothman", fileNo: "CRF-0017", classification: "CLASS-IV", classColor: "bg-accent-500", region: "North America", description: "赤い目を持つ翼のある人型生物。災害の前兆として目撃される。" },
+  { id: "tsuchinoko", name: "ツチノコ", nameEn: "Tsuchinoko", fileNo: "CRF-0042", classification: "CLASS-III", classColor: "bg-warning", region: "Japan", description: "日本の山林に生息するとされる太く短い蛇のような未確認生物。", image: "/creatures/tsuchinoko-1.jpg" },
+  { id: "bigfoot", name: "ビッグフット", nameEn: "Bigfoot", fileNo: "CRF-0001", classification: "CLASS-IV", classColor: "bg-accent-500", region: "North America", description: "北米の森林地帯で目撃される大型の二足歩行類人猿。", image: "" },
+  { id: "mothman", name: "モスマン", nameEn: "Mothman", fileNo: "CRF-0017", classification: "CLASS-IV", classColor: "bg-accent-500", region: "North America", description: "赤い目を持つ翼のある人型生物。災害の前兆として目撃される。", image: "" },
 ];
 
 export default function FeaturedCryptids() {
@@ -31,7 +31,7 @@ export default function FeaturedCryptids() {
             >
               <div className="relative aspect-[4/3] bg-neutral-100 overflow-hidden">
                 <Image
-                  src={getImage(undefined, creature.id)}
+                  src={getImage(creature.image, creature.id)}
                   alt={creature.nameEn}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"

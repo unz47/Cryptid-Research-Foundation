@@ -130,6 +130,7 @@
     "successMessage": "目撃報告が受理されました。CRF調査員が速やかに審査を行います。検証完了後、レポートIDが付与されます。"
   },
   "footer": {
-    "copyright": "© {year} Cryptid Research Foundation. All rights reserved."
+    "copyright": "© {year} Cryptid Research Foundation. All rights reserved.",
+    "disclaimer": "本サイトはフィクションです。CRF（Cryptid Research Foundation）は架空の組織であり、掲載されている調査報告・画像・映像はすべて創作物です。"
   }
 }
